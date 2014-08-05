@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+10.01 Content Header
+--------------------------------------------------------------*/
+.site-description{
+	
+}
+header{
+	background: url(/wp-content/themes/wakemojo/img/header-bg.png);
+	width: 100%;
+	position: relative;
+	z-index: 999;
+}
+.header-wrap{
+	margin: 0 auto;
+	width: 1060px;
+	overflow: hidden;
+	padding: 6px 0;
+}
+.search-box{
+	float: right;
+	input{
+		&[type="text"]{
+			background: #DFFFFF;
+			border-radius: 0;
+			border: 0;
+			margin-top: 4px;
+		}
+		&::-webkit-input-placeholder{
+			text-transform: uppercase !important;
+			font-family: Helvetica, sans-serif;
+			font-size: 14px;
+			color:#032454;
+			padding-top: 2px;
+			padding-left: 5px;
+		}
+		&::-moz-placeholder{
+			text-transform: uppercase !important;
+			font-family: Helvetica, sans-serif;
+			font-size: 14px;
+			color:#032454;
+			padding-top: 2px;
+			padding-left: 5px;
+		}
+		&:moz-placeholder{
+			text-transform: uppercase !important;
+			font-family: Helvetica, sans-serif;
+			font-size: 14px;
+			color:#032454;
+			padding-top: 2px;
+			padding-left: 5px;
+		}
+		&:-ms-input-placeholder{
+			text-transform: uppercase !important;
+			font-family: Helvetica, sans-serif;
+			font-size: 14px;
+			color:#032454;
+			padding-top: 2px;
+			padding-left: 5px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+
+  ad8888ba,           db                                                            88 88          88 88 88
+ 8P'    "Y8          d88b                                                           "" 88          "" 88 ""   ,d
+d8                  d8'`8b                                                             88             88      88
+88,dd888bb,        d8'  `8b     ,adPPYba,  ,adPPYba,  ,adPPYba, ,adPPYba, ,adPPYba, 88 88,dPPYba,  88 88 88 MM88MMM 8b       d8
+88P'    `8b       d8YaaaaY8b   a8"     "" a8"     "" a8P_____88 I8[    "" I8[    "" 88 88P'    "8a 88 88 88   88    `8b     d8'
+88       d8      d8""""""""8b  8b         8b         8PP"""""""  `"Y8ba,   `"Y8ba,  88 88       d8 88 88 88   88     `8b   d8'
+88a     a8P     d8'        `8b "8a,   ,aa "8a,   ,aa "8b,   ,aa aa    ]8I aa    ]8I 88 88b,   ,a8" 88 88 88   88,     `8b,d8'
+ "Y88888P"     d8'          `8b `"Ybbd8"'  `"Ybbd8"'  `"Ybbd8"' `"YbbdP"' `"YbbdP"' 88 8Y"Ybbd8"'  88 88 88   "Y888     Y88'
+                                                                                                                        d8'
+                                                                                                                       d8'
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}

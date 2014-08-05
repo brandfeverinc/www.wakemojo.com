@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+10.04 Content - Pages
+--------------------------------------------------------------*/
+
+.page-content {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.logo{
+	text-align: center;
+	margin-top: -45px;
+	position: relative;
+	z-index: 9999;
+}
+.hero{
+	margin: -92px auto 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 9;
+	img{
+		width: 100%;
+	}
+}
+.green-bar{
+	background: #77CA93;
+	margin-top: -7px;
+	width: 100%;
+	.wrap{
+		width: 1060px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 15px 0;
+	}
+	.reference{
+		float: left;
+		font-family: Helvetica, sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		color: #fff;
+		text-transform: uppercase;
+		padding-top: 8px;
+	}
+	.blog-link{
+		float: right;
+		overflow: hidden;
+	}
+	.arrow{
+		float: left;
+	}
+	.blog-link-text{
+		float: right;
+		padding: 7px 0 0 15px;
+	}
+	a, a:visited{
+		font-family: 'Raleway', sans-serif;
+		color: #032454;
+		font-size: 18px;
+	}
+}
+.homepage-categories{
+	background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
+	width: 100%;
+	overflow: hidden;
+	.wrap{
+		width: 1060px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 40px 0;
+	}
+	.featured-box{
+		float: left;
+		width: 300px;
+		.text{
+			background: #DFFFFF;
+			margin-top: -7px;
+			padding: 0 42px 20px 42px;
+			font-family: Helvetica, sans-serif;
+			color: #032454;
+			font-size: 12px;
+			h2{
+				font-family: 'Oswald', sans-serif;
+				color: #032454;
+				font-size: 20px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			p{
+				min-height: 75px;
+			}
+			.view-all{
+				text-align: center;
+				color: #fff;
+				text-transform: uppercase;
+				background: #032454;
+				font-family: 'Oswald', sans-serif;
+				text-decoration: none;
+				width: 100px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.boards, .boats{
+		margin-right: 80px;
+	}
+}
