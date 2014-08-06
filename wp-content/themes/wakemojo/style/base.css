@@ -108,9 +108,53 @@ and Blueprint http://www.blueprintcss.org/
 10.02 Content Footer
 --------------------------------------------------------------*/
 /* line 4, _content-footer.scss */
-.site-footer {
-  color: #ccc;
-  padding: 50px 0 20px;
+.home footer {
+  background: url(/wp-content/themes/wakemojo/img/footer-bg.jpg) no-repeat top;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  padding: 140px 0 50px;
+}
+/* line 12, _content-footer.scss */
+.home footer .wrap {
+  margin: 0 auto;
+  width: 1180px;
+  overflow: hidden;
+}
+/* line 17, _content-footer.scss */
+.home footer h2 {
+  color: #99C3FF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+/* line 24, _content-footer.scss */
+.home footer .col-1, .home footer .col-2, .home footer .col-3 {
+  float: left;
+}
+/* line 27, _content-footer.scss */
+.home footer .col-1 {
+  width: 630px;
+}
+/* line 30, _content-footer.scss */
+.home footer .col-1, .home footer .col-2 {
+  margin-right: 183px;
+}
+/* line 33, _content-footer.scss */
+.home footer .facebook, .home footer .blog-button {
+  float: left;
+}
+/* line 36, _content-footer.scss */
+.home footer .facebook {
+  margin-right: 15px;
+}
+/* line 39, _content-footer.scss */
+.home footer .copyright {
+  clear: both;
+  padding-top: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -197,37 +241,38 @@ header {
 /* line 12, _content-pages.scss */
 .logo {
   text-align: center;
-  margin-top: -45px;
+  margin: -45px auto 0 auto;
   position: relative;
   z-index: 9999;
+  width: 263px;
 }
 
-/* line 18, _content-pages.scss */
+/* line 19, _content-pages.scss */
 .hero {
   margin: -92px auto 0 auto;
   text-align: center;
   position: relative;
   z-index: 9;
 }
-/* line 23, _content-pages.scss */
+/* line 24, _content-pages.scss */
 .hero img {
   width: 100%;
 }
 
-/* line 27, _content-pages.scss */
+/* line 28, _content-pages.scss */
 .green-bar {
   background: #77CA93;
   margin-top: -7px;
   width: 100%;
 }
-/* line 31, _content-pages.scss */
+/* line 32, _content-pages.scss */
 .green-bar .wrap {
   width: 1060px;
   margin: 0 auto;
   overflow: hidden;
   padding: 15px 0;
 }
-/* line 37, _content-pages.scss */
+/* line 38, _content-pages.scss */
 .green-bar .reference {
   float: left;
   font-family: Helvetica, sans-serif;
@@ -238,46 +283,46 @@ header {
   text-transform: uppercase;
   padding-top: 8px;
 }
-/* line 47, _content-pages.scss */
+/* line 48, _content-pages.scss */
 .green-bar .blog-link {
   float: right;
   overflow: hidden;
 }
-/* line 51, _content-pages.scss */
+/* line 52, _content-pages.scss */
 .green-bar .arrow {
   float: left;
 }
-/* line 54, _content-pages.scss */
+/* line 55, _content-pages.scss */
 .green-bar .blog-link-text {
   float: right;
   padding: 7px 0 0 15px;
 }
-/* line 58, _content-pages.scss */
+/* line 59, _content-pages.scss */
 .green-bar a, .green-bar a:visited {
   font-family: 'Raleway', sans-serif;
   color: #032454;
   font-size: 18px;
 }
 
-/* line 64, _content-pages.scss */
+/* line 65, _content-pages.scss */
 .homepage-categories {
   background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
   width: 100%;
   overflow: hidden;
 }
-/* line 68, _content-pages.scss */
+/* line 69, _content-pages.scss */
 .homepage-categories .wrap {
   width: 1060px;
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
 }
-/* line 74, _content-pages.scss */
+/* line 75, _content-pages.scss */
 .homepage-categories .featured-box {
   float: left;
   width: 300px;
 }
-/* line 77, _content-pages.scss */
+/* line 78, _content-pages.scss */
 .homepage-categories .featured-box .text {
   background: #DFFFFF;
   margin-top: -7px;
@@ -286,7 +331,7 @@ header {
   color: #032454;
   font-size: 12px;
 }
-/* line 84, _content-pages.scss */
+/* line 85, _content-pages.scss */
 .homepage-categories .featured-box .text h2 {
   font-family: 'Oswald', sans-serif;
   color: #032454;
@@ -294,11 +339,11 @@ header {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 91, _content-pages.scss */
+/* line 92, _content-pages.scss */
 .homepage-categories .featured-box .text p {
   min-height: 75px;
 }
-/* line 94, _content-pages.scss */
+/* line 95, _content-pages.scss */
 .homepage-categories .featured-box .text .view-all {
   text-align: center;
   color: #fff;
@@ -309,9 +354,107 @@ header {
   width: 100px;
   margin: 0 auto;
 }
-/* line 106, _content-pages.scss */
+/* line 107, _content-pages.scss */
 .homepage-categories .boards, .homepage-categories .boats {
   margin-right: 80px;
+}
+
+/* line 111, _content-pages.scss */
+.homepage-cta {
+  background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 65px 0;
+}
+/* line 115, _content-pages.scss */
+.homepage-cta .wrap {
+  background: url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);
+  margin: 0 auto;
+  width: 1080px;
+  padding: 30px 335px;
+}
+/* line 120, _content-pages.scss */
+.homepage-cta .wrap h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 125, _content-pages.scss */
+.homepage-cta .wrap h2 a {
+  color: #032454;
+  text-decoration: none;
+}
+
+/* line 132, _content-pages.scss */
+.featured-posts {
+  background: #99C3FF;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 136, _content-pages.scss */
+.featured-posts .wrap {
+  margin: 0 auto;
+  width: 1180px;
+  overflow: hidden;
+  padding: 35px 0;
+  font-family: Helvetica, sans-serif;
+  color: #032454;
+  font-size: 14px;
+}
+/* line 144, _content-pages.scss */
+.featured-posts .wrap h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #032454;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+/* line 152, _content-pages.scss */
+.featured-posts .wrap .border {
+  padding-bottom: 30px;
+}
+/* line 155, _content-pages.scss */
+.featured-posts .wrap .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 158, _content-pages.scss */
+.featured-posts .wrap .title a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 163, _content-pages.scss */
+.featured-posts .wrap .read-more {
+  background: #77CA93;
+  padding: 5px 0;
+  width: 88px;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+/* line 164, _content-pages.scss */
+.featured-posts .wrap .read-more a {
+  color: #032454;
+  text-decoration: none;
+}
+/* line 176, _content-pages.scss */
+.featured-posts .featured-post {
+  float: left;
+  width: 230px;
+}
+/* line 179, _content-pages.scss */
+.featured-posts .featured-post.id-0, .featured-posts .featured-post.id-1, .featured-posts .featured-post.id-2 {
+  margin-right: 86px;
+}
+
+/* line 184, _content-pages.scss */
+.page-title {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------

@@ -11,9 +11,10 @@
 }
 .logo{
 	text-align: center;
-	margin-top: -45px;
+	margin: -45px auto 0 auto;
 	position: relative;
 	z-index: 9999;
+	width: 263px;
 }
 .hero{
 	margin: -92px auto 0 auto;
@@ -107,3 +108,108 @@
 		margin-right: 80px;
 	}
 }
+.homepage-cta{
+	background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
+	background-size: cover;
+	padding: 65px 0;
+	.wrap{
+		background: url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);
+		margin: 0 auto;
+		width: 1080px;
+		padding: 30px 335px;
+		h2{
+			font-family: 'Oswald', sans-serif;
+			font-size: 40px;
+			text-transform: uppercase;
+			text-align: center;
+			a{
+				color: #032454;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.featured-posts{
+	background: #99C3FF;
+	width: 100%;
+	overflow: hidden;
+	.wrap{
+		margin: 0 auto;
+		width: 1180px;
+		overflow: hidden;
+		padding: 35px 0;
+		font-family: Helvetica, sans-serif;
+		color: #032454;
+		font-size: 14px;
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			color: #032454;
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			padding-bottom: 20px;
+		}
+		.border{
+			padding-bottom: 30px;
+		}
+		.title{
+			font-weight: bold;
+			font-size: 20px;
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		.read-more{
+			a{
+				color: #032454;
+				text-decoration: none;
+			}
+			background: #77CA93;
+			padding: 5px 0;
+			width: 88px;
+			text-align: center;
+			font-size: 11px;
+			text-transform: uppercase;
+		}
+	}
+	.featured-post{
+		float: left;
+		width: 230px;
+		&.id-0, &.id-1, &.id-2{
+			margin-right: 86px;
+		}
+	}
+}
+.page-title{
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

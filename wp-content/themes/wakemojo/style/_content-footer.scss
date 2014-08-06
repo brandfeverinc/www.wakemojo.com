@@ -1,7 +1,43 @@
 /*--------------------------------------------------------------
 10.02 Content Footer
 --------------------------------------------------------------*/
-.site-footer {
-	color: #ccc;
-	padding: 50px 0 20px;
+.home footer{
+	background: url(/wp-content/themes/wakemojo/img/footer-bg.jpg) no-repeat top;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	padding: 140px 0 50px;
+	.wrap{
+		margin: 0 auto;
+		width: 1180px;
+		overflow: hidden;
+	}
+	h2{
+		color: #99C3FF;
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+	}
+	.col-1, .col-2, .col-3{
+		float: left;
+	}
+	.col-1{
+		width: 630px;
+	}
+	.col-1, .col-2{
+		margin-right: 183px;
+	}
+	.facebook, .blog-button{
+		float: left;
+	}
+	.facebook{
+		margin-right: 15px;
+	}
+	.copyright{
+		clear: both;
+		padding-top: 20px;
+	}
 }
