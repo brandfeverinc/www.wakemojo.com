@@ -25,15 +25,38 @@ get_header(); ?>
         	</div>
             <div class="brands-loop">
                 <div class="wrap">
+                    <div class="inner-wrap">
                     <?php
                     //list terms in a given taxonomy
                     $taxonomy = 'brand';
                     $tax_terms = get_terms($taxonomy);
+                    $brand_image = 'brand_image';
                     ?>
-                    <ul>
                     <?php
-                    foreach ($tax_terms as $tax_term) {
-                    echo '<li>' . '<a href="' . esc_attr(get_term_link($tax_term, $taxonomy)) . '" title="' . sprintf( __( "View all posts in %s" ), $tax_term->name ) . '" ' . '>' . $tax_term->name.'</a></li>';
-                    }
+                    foreach ($tax_terms as $tax_term) { 
+                    $term_link = get_term_link( $tax_term ); ?>
+                       <div class="brand-container">
+                            <?php echo '<a href="' . esc_url( $term_link ) . '">' ?>
+                            <img class="brand-image" src="<?php the_field($brand_image, $tax_term); ?>">
+                            <?php echo '</a>'; ?>
+                            <?php echo '<a class="view-all-boards" href="' . esc_url( $term_link ) . '">View All</a>' ?>
+                        </div> 
+                    <?php }
                     ?>
-                    </ul>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+</div>
+<div id="bottom-container">
+    <div class="cta">
+        <div class="wrap">
+            <h2><a href="<?php the_field('page_cta_link'); ?>"><?php the_field('page_cta_text'); ?></a></h2>
+        </div>
+    </div>
+    <div class="contact-us">
+        <a href="<?php the_field('page_cta_link'); ?>">Contact Us >></a>
+    </div>
+
+  <?php get_footer(); ?>

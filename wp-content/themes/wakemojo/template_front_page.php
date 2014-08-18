@@ -19,7 +19,7 @@ get_header(); ?>
         				<h2><?php the_field('green_bar_text'); ?></h2>
         			</div>
         			<div class="blog-link">
-        				<a href="#">
+        				<a href="/blog/">
         					<div class="arrow"><img src="/wp-content/themes/wakemojo/img/blog-arrow.png"></div>
         					<div class="blog-link-text"><?php the_field('blog_link_text'); ?></div>
         				</a>
@@ -35,7 +35,7 @@ get_header(); ?>
         				<div class="text">
         					<h2>Boards</h2>
         					<p><?php the_field('boards_text'); ?></p>
-        					<a href="#"><div class="view-all">View All</div></a>
+        					<a href="/board-makers/"><div class="view-all">View All</div></a>
         				</div>
 				    </div>
         			<div class="featured-box boats">
@@ -45,7 +45,7 @@ get_header(); ?>
         				<div class="text">
         					<h2>Boats</h2>
         					<p><?php the_field('boats_text'); ?></p>
-        					<a href="#"><div class="view-all">View All</div></a>
+        					<a href="/boat-makers/"><div class="view-all">View All</div></a>
         				</div>
 				    </div>
         			<div class="featured-box gear">
@@ -60,7 +60,7 @@ get_header(); ?>
 				    </div>
 			     </div>
         	</div>
-            <div class="homepage-cta">
+            <div class="cta">
                 <div class="wrap">
                     <h2><a href="<?php the_field('cta_link'); ?>"><?php the_field('cta_text'); ?></a></h2>
                 </div>

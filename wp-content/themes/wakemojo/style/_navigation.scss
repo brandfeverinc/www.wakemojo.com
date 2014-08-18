@@ -61,14 +61,21 @@ a:active {
 .menu-toggle {
 	cursor: pointer;
 	display: none;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+a.menu-toggle, a:visited.menu-toggle{
+	color: #fff;
+}
+@media screen and (max-width: 860px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
 	}
 
-	.main-navigation ul {
+	.main-navigation ul, .search-box {
 		display: none;
 	}
 }

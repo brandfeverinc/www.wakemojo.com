@@ -1,0 +1,1222 @@
+3.1.15 (Brainy Betty)
+658d14f923d8d08f26f1ad85fb5f840344f59ffb
+o:Sass::Tree::RootNode
+:@template"ß /*--------------------------------------------------------------
+10.04 Content - Pages
+--------------------------------------------------------------*/
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+h2, h3{
+	color: #032454;
+	font-size: 20px !important;
+	text-transform: uppercase;
+}
+h2{
+	font-family: 'Oswald', sans-serif !important;
+}
+h3{
+	font-family: Helvetica, sans-serif !important;
+}
+.logo{
+	text-align: center;
+	margin: -45px auto 0 auto;
+	position: relative;
+	z-index: 9999;
+	width: 263px;
+}
+.hero{
+	margin: -92px auto 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 9;
+	img{
+		width: 100%;
+	}
+	&.single{
+		background: url(/wp-content/themes/wakemojo/img/boards-hero.jpg) no-repeat top center;
+		background-size: cover;
+		padding: 14% 0;
+		top: 0;
+		left: 0;
+	}
+	.wrap{
+		position: relative;
+		overflow: hidden;
+		width: 59%;
+		margin: 0 auto;
+		font-family: Helvetica, sans-serif;
+		font-size: 12px;
+		text-align: left;
+		.board-image{
+			float: left;
+			width: 60%;
+			text-align: center;
+		}
+		.sidebar{
+			color: #032454;
+			float: right;
+			width: 37%;
+		}
+		.sidebar-top{
+			background: url(/wp-content/themes/wakemojo/img/sidebar-bg.png);
+			padding: 0 30px;
+		}
+		.brand-name{
+			font-family: 'Oswald', sans-serif;
+			font-size: 32px;
+			text-transform: uppercase;
+			padding-top: 15px;
+			a, a:visited{
+				color: #032454;
+				text-decoration: none;
+			}
+		}
+		.summary{
+			padding-bottom: 20px;
+		}
+		.board-title{
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding-bottom: 20px;
+		}
+		.team-size{
+			padding-bottom: 20px;
+		}
+		.team-rider, .fins-title, .shaped-by-title, .cf-title{
+			font-family: Helvetica, sans-serif;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		.shaped-by, .construction-features{
+			padding-bottom: 20px;
+		}
+		img{
+			max-width: 479px;
+			max-height: 615px;
+			width: auto;
+		}
+		.sidebar-bottom{
+			padding: 20px 30px;
+			background: url(/wp-content/themes/wakemojo/img/link-bg.png);
+			margin-top: 10px;
+			a{
+				color: #032454;
+				text-transform: uppercase;
+				font-family: Helvetica, sans-serif;
+				text-decoration: none;
+				font-size: 13px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+.green-bar{
+	background: #77CA93;
+	margin-top: -7px;
+	width: 100%;
+	.wrap{
+		width: 1060px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 15px 0;
+	}
+	.reference{
+		float: left;
+		font-family: Helvetica, sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		color: #fff;
+		text-transform: uppercase;
+		padding-top: 8px;
+	}
+	.blog-link{
+		float: right;
+		overflow: hidden;
+	}
+	.arrow{
+		float: left;
+	}
+	.blog-link-text{
+		float: right;
+		padding: 7px 0 0 15px;
+	}
+	a, a:visited{
+		font-family: 'Raleway', sans-serif;
+		color: #032454;
+		font-size: 18px;
+	}
+}
+.homepage-categories{
+	background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
+	width: 100%;
+	overflow: hidden;
+	.wrap{
+		width: 1060px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 40px 0;
+	}
+	.featured-box{
+		float: left;
+		width: 300px;
+		.text{
+			background: #DFFFFF;
+			margin-top: -7px;
+			padding: 0 42px 20px 42px;
+			font-family: Helvetica, sans-serif;
+			color: #032454;
+			font-size: 12px;
+			h2{
+				font-family: 'Oswald', sans-serif;
+				color: #032454;
+				font-size: 20px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			p{
+				min-height: 75px;
+			}
+			.view-all{
+				text-align: center;
+				color: #fff;
+				text-transform: uppercase;
+				background: #032454;
+				font-family: 'Oswald', sans-serif;
+				text-decoration: none;
+				width: 100px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.boards, .boats{
+		margin-right: 80px;
+	}
+}
+.cta{
+	padding: 65px 0 40px;
+	.wrap{
+		background: url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);
+		margin: 0 auto;
+		width: 1080px;
+		padding: 30px 335px;
+		h2{
+			font-family: 'Oswald', sans-serif;
+			font-size: 40px;
+			text-transform: uppercase;
+			text-align: center;
+			a{
+				color: #032454;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.contact-us{
+	background: url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);
+	margin: 0 auto 80px auto;
+	width: 375px;
+	text-align: center;
+	padding: 18px 0;
+	a{
+		color: #032454;
+		text-decoration: none;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+.home .cta{
+	background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
+	background-size: cover;
+	padding: 65px 0;
+}
+.featured-posts{
+	background: #99C3FF;
+	width: 100%;
+	overflow: hidden;
+	.wrap{
+		margin: 0 auto;
+		width: 1180px;
+		overflow: hidden;
+		padding: 35px 0;
+		font-family: Helvetica, sans-serif;
+		color: #032454;
+		font-size: 14px;
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			color: #032454;
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			padding-bottom: 20px;
+		}
+		.border{
+			padding-bottom: 30px;
+		}
+		.title{
+			font-weight: bold;
+			font-size: 20px;
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		.read-more{
+			a{
+				color: #032454;
+				text-decoration: none;
+			}
+			background: #77CA93;
+			padding: 5px 0;
+			width: 88px;
+			text-align: center;
+			font-size: 11px;
+			text-transform: uppercase;
+		}
+	}
+	.featured-post{
+		float: left;
+		width: 230px;
+		&.id-0, &.id-1, &.id-2{
+			margin-right: 86px;
+		}
+	}
+}
+.page-title{
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.brands-loop{
+	width: 100%;
+	background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
+	overflow: hidden;
+	.wrap{
+		margin: 0 auto;
+		width: 1316px;
+		background: url(/wp-content/themes/wakemojo/img/blue-mist.png) repeat-y center;
+		overflow: hidden;
+	}
+	.inner-wrap{
+		margin: 0 auto;
+		width: 1080px;
+		overflow: hidden;
+		background: #fff;
+		padding: 30px 0 0 30px;
+		&.review, &.blog{
+			padding: 30px 150px;
+			h2{
+				font-family: 'Oswald', sans-serif;
+				color: #032454;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+			h3, h3 a{
+				color: #032454;
+				font-size: 20px;
+				font-family: Helvetica, sans-serif;
+				text-transform: uppercase;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+		&.blog{
+			.post-container{
+				overflow: hidden;
+			}
+			.image{
+				float: left;
+			}
+			.content{
+				float: right;
+				width: 400px;
+			}
+			h3{
+				color: #8FB9FF;
+			}
+		}
+		&.page{
+			font-family: 'Raleway', sans-serif;
+			font-weight: 500;
+			color: #8FB9FF;
+		}
+	}
+	.brand-container{
+		float: left;
+		width: 322px;
+		min-height: 262px;
+		margin: 0 28px 28px 0;
+		text-align: center;
+		border: 1px solid #809FCB;
+	}
+	.view-all-boards{
+		display: block;
+		background: #032454;
+		font-family: 'Oswald', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 12px;
+		width: 90px;
+		text-align: center;
+		margin: 0 auto;
+		text-decoration: none;
+	}
+}
+#bottom-container{
+	background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+.board-brand-title{
+	color: #032454;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.quote{
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #032454;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.brand-blurb{
+	padding: 30px 30px 30px 0;
+	color: #8FB9FF;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.brand-link{
+	font-family: Helvetica, sans-serif;
+	color: #77C089;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	a, a:visited{
+		color: #77C089;
+	}
+}
+.boards-loop-title{
+	background: url(/wp-content/themes/wakemojo/img/loop-title-bg.png) no-repeat center;
+	font-family: Helvetica, sans-serif;
+	color: #032454;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px 0;
+}
+.brand-image.board{
+	max-width: 157px;
+}
+.bottom-summary{
+	width: 780px;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #8FB9FF;
+	font-size: 20px;
+	padding: 40px 0;
+}
+.rating-title{
+	float: left;
+}
+.rating{
+	float: right;
+}
+.rating-container {
+	overflow: hidden;
+	width: 420px;
+}
+.expand {
+	padding: 50px 0;
+	text-align: center;
+	cursor: pointer;
+	width: 290px;
+	margin: 0 auto;
+	h3{
+		padding-bottom: 20px;
+	}
+}
+.review-content{
+	display: none;
+}
+.fancybox{
+	float: left;
+	margin: 0 45px 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+@linei:@children["o:Sass::Tree::CommentNode:@value["ó/*--------------------------------------------------------------
+10.04 Content - Pages
+--------------------------------------------------------------*/;i;[ :@options{ :
+@loud0:@silent0o:Sass::Tree::RuleNode;i	;[o:Sass::Tree::PropNode:@prop_syntax:new;
+o:Sass::Script::String:
+@type:identifier;
+"	both;@:
+@name["
+clear;i
+;[ ;@:
+@tabsi o;;;;
+o;;;;
+"0 0 1.5em;@;["margin;i;[ ;@;i ;@;i :@has_childrenT:
+@rule[".page-links:@parsed_ruleso:"Sass::Selector::CommaSequence:@filename" :@members[o:Sass::Selector::Sequence;[o:#Sass::Selector::SimpleSequence;@;[o:Sass::Selector::Class;@;["page-links;i	;i	;i	o;;i;[o;;;;
+o;;;;
+"#032454;@;["
+color;i;[ ;@;i o;;;;
+o;;;;
+"20px !important;@;["font-size;i;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i;[ ;@;i ;@;i ;T;["h2, h3;o;;" ;[o;;[o;;@>;[o:Sass::Selector::Element	;@>:@namespace0;["h2;i;io;;[o;;@>;[o; 	;@>;!0;["h3;i;i;io;;i;[o;;;;
+o;;;;
+"$'Oswald', sans-serif !important;@;["font-family;i;[ ;@;i ;@;i ;T;["h2;o;;" ;[o;;[o;;@Y;[o; 	;@Y;!0;["h2;i;i;io;;i;[o;;;;
+o;;;;
+"%Helvetica, sans-serif !important;@;["font-family;i;[ ;@;i ;@;i ;T;["h3;o;;" ;[o;;[o;;@m;[o; 	;@m;!0;["h3;i;i;io;;i;[
+o;;;;
+o;;;;
+"center;@;["text-align;i;[ ;@;i o;;;;
+o:Sass::Script::List	;
+[	o:Sass::Script::Number;
+iŒ:@original"
+-45px;i;@:@denominator_units[ :@numerator_units["pxo;	;;;
+"	auto;i;@o;#;
+i ;$"0;i;@;%[ ;&[ o;	;;;
+"	auto;i;@;i;@:@separator:
+space;["margin;i;[ ;@;i o;;;;
+o;;;;
+"relative;@;["position;i;[ ;@;i o;;;;
+o;;;;
+"	9999;@;["z-index;i;[ ;@;i o;;;;
+o;;;;
+"
+263px;@;["
+width;i;[ ;@;i ;@;i ;T;["
+.logo;o;;" ;[o;;[o;;@°;[o;;@°;["	logo;i;i;io;;i;[o;;;;
+o;"	;
+[	o;#;
+iü;$"
+-92px;i ;@;%[ ;&["pxo;	;;;
+"	auto;i ;@o;#;
+i ;$"0;i ;@;%@Ö;&[ o;	;;;
+"	auto;i ;@;i ;@;';(;["margin;i ;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;i!;[ ;@;i o;;;;
+o;;;;
+"relative;@;["position;i";[ ;@;i o;;;;
+o;;;;
+"9;@;["z-index;i#;[ ;@;i o;;i$;[o;;;;
+o;;;;
+"	100%;@;["
+width;i%;[ ;@;i ;@;i ;T;["img;o;;" ;[o;;[o;;@€;[o; 	;@€;!0;["img;i$;i$;i$o;;i';[
+o;;;;
+o;"	;
+[	o;	;;;
+"9url(/wp-content/themes/wakemojo/img/boards-hero.jpg);i(;@o;	;;;
+"no-repeat;i(;@o;	;;;
+"top;i(;@o;	;;;
+"center;i(;@;i(;@;';(;["background;i(;[ ;@;i o;;;;
+o;;;;
+"
+cover;@;["background-size;i);[ ;@;i o;;;;
+o;;;;
+"
+14% 0;@;["padding;i*;[ ;@;i o;;;;
+o;;;;
+"0;@;["top;i+;[ ;@;i o;;;;
+o;;;;
+"0;@;["	left;i,;[ ;@;i ;@;i ;T;["&.single;o;;" ;[o;;[o;;@;[o:Sass::Selector::Parent;@;i'o;;@;["single;i';i';i'o;;i.;[o;;;;
+o;;;;
+"relative;@;["position;i/;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;i0;[ ;@;i o;;;;
+o;;;;
+"59%;@;["
+width;i1;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;i2;[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;i3;[ ;@;i o;;;;
+o;;;;
+"	12px;@;["font-size;i4;[ ;@;i o;;;;
+o;;;;
+"	left;@;["text-align;i5;[ ;@;i o;;i6;[o;;;;
+o;;;;
+"	left;@;["
+float;i7;[ ;@;i o;;;;
+o;;;;
+"60%;@;["
+width;i8;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;i9;[ ;@;i ;@;i ;T;[".board-image;o;;" ;[o;;[o;;@\;[o;;@\;["board-image;i6;i6;i6o;;i;;[o;;;;
+o;;;;
+"#032454;@;["
+color;i<;[ ;@;i o;;;;
+o;;;;
+"
+right;@;["
+float;i=;[ ;@;i o;;;;
+o;;;;
+"37%;@;["
+width;i>;[ ;@;i ;@;i ;T;[".sidebar;o;;" ;[o;;[o;;@|;[o;;@|;["sidebar;i;;i;;i;o;;i@;[o;;;;
+o;	;;;
+"8url(/wp-content/themes/wakemojo/img/sidebar-bg.png);iA;@;["background;iA;[ ;@;i o;;;;
+o;;;;
+"0 30px;@;["padding;iB;[ ;@;i ;@;i ;T;[".sidebar-top;o;;" ;[o;;[o;;@ñ;[o;;@ñ;["sidebar-top;i@;i@;i@o;;iD;[
+o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;iE;[ ;@;i o;;;;
+o;;;;
+"	32px;@;["font-size;iF;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iG;[ ;@;i o;;;;
+o;;;;
+"	15px;@;["padding-top;iH;[ ;@;i o;;iI;[o;;;;
+o;;;;
+"#032454;@;["
+color;iJ;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;iK;[ ;@;i ;@;i ;T;["a, a:visited;o;;" ;[o;;[o;;@ ;[o; 	;@ ;!0;["a;iI;iIo;;[o;;@ ;[o; 	;@ ;!0;["a;iIo:Sass::Selector::Pseudo
+;@ ;["visited;:
+class;iI:	@arg0;iI;iI;@;i ;T;[".brand-name;o;;" ;[o;;[o;;@‡;[o;;@‡;["brand-name;iD;iD;iDo;;iN;[o;;;;
+o;;;;
+"	20px;@;["padding-bottom;iO;[ ;@;i ;@;i ;T;[".summary;o;;" ;[o;;[o;;@Ù;[o;;@Ù;["summary;iN;iN;iNo;;iQ;[	o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;iR;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;iS;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iT;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["padding-bottom;iU;[ ;@;i ;@;i ;T;[".board-title;o;;" ;[o;;[o;;@;[o;;@;["board-title;iQ;iQ;iQo;;iW;[o;;;;
+o;;;;
+"	20px;@;["padding-bottom;iX;[ ;@;i ;@;i ;T;[".team-size;o;;" ;[o;;[o;;@.;[o;;@.;["team-size;iW;iW;iWo;;iZ;[	o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;i[;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i\;[ ;@;i o;;;;
+o;;;;
+"	bold;@;["font-weight;i];[ ;@;i o;;;;
+o;;;;
+"	14px;@;["font-size;i^;[ ;@;i ;@;i ;T;[":.team-rider, .fins-title, .shaped-by-title, .cf-title;o;;" ;[	o;;[o;;@T;[o;;@T;["team-rider;iZ;iZo;;[o;;@T;[o;;@T;["fins-title;iZ;iZo;;[o;;@T;[o;;@T;["shaped-by-title;iZ;iZo;;[o;;@T;[o;;@T;["cf-title;iZ;iZ;iZo;;i`;[o;;;;
+o;;;;
+"	20px;@;["padding-bottom;ia;[ ;@;i ;@;i ;T;["'.shaped-by, .construction-features;o;;" ;[o;;[o;;@};[o;;@};["shaped-by;i`;i`o;;[o;;@};[o;;@};["construction-features;i`;i`;i`o;;ic;[o;;;;
+o;;;;
+"
+479px;@;["max-width;id;[ ;@;i o;;;;
+o;;;;
+"
+615px;@;["max-height;ie;[ ;@;i o;;;;
+o;;;;
+"	auto;@;["
+width;if;[ ;@;i ;@;i ;T;["img;o;;" ;[o;;[o;;@§;[o; 	;@§;!0;["img;ic;ic;ico;;ih;[	o;;;;
+o;;;;
+"20px 30px;@;["padding;ii;[ ;@;i o;;;;
+o;	;;;
+"5url(/wp-content/themes/wakemojo/img/link-bg.png);ij;@;["background;ij;[ ;@;i o;;;;
+o;;;;
+"	10px;@;["margin-top;ik;[ ;@;i o;;il;[o;;;;
+o;;;;
+"#032454;@;["
+color;im;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;in;[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;io;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;ip;[ ;@;i o;;;;
+o;;;;
+"	13px;@;["font-size;iq;[ ;@;i o;;;;
+o;;;;
+"600;@;["font-weight;ir;[ ;@;i ;@;i ;T;["a;o;;" ;[o;;[o;;@Í;[o; 	;@Í;!0;["a;il;il;il;@;i ;T;[".sidebar-bottom;o;;" ;[o;;[o;;@ˆ;[o;;@ˆ;["sidebar-bottom;ih;ih;ih;@;i ;T;["
+.wrap;o;;" ;[o;;[o;;@;[o;;@;["	wrap;i.;i.;i.;@;i ;T;["
+.hero;o;;" ;[o;;[o;;@;[o;;@;["	hero;i;i;io;;iw;[o;;;;
+o;;;;
+"#77CA93;@;["background;ix;[ ;@;i o;;;;
+o;#;
+iÙ;$"	-7px;iy;@;%[ ;&["px;["margin-top;iy;[ ;@;i o;;;;
+o;;;;
+"	100%;@;["
+width;iz;[ ;@;i o;;i{;[	o;;;;
+o;;;;
+"1060px;@;["
+width;i|;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;i};[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;i~;[ ;@;i o;;;;
+o;;;;
+"15px 0;@;["padding;i;[ ;@;i ;@;i ;T;["
+.wrap;o;;" ;[o;;[o;;@K;[o;;@K;["	wrap;i{;i{;i{o;;i|;[o;;;;
+o;;;;
+"	left;@;["
+float;i};[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;i~;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i;[ ;@;i o;;;;
+o;;;;
+"400;@;["font-weight;iÄ;[ ;@;i o;;;;
+o;;;;
+"2px;@;["letter-spacing;iÅ;[ ;@;i o;;;;
+o;;;;
+"	#fff;@;["
+color;iÇ;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iÉ;[ ;@;i o;;;;
+o;;;;
+"8px;@;["padding-top;iÑ;[ ;@;i ;@;i ;T;[".reference;o;;" ;[o;;[o;;@â;[o;;@â;["reference;i|;i|;i|o;;iÜ;[o;;;;
+o;;;;
+"
+right;@;["
+float;iá;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;ià;[ ;@;i ;@;i ;T;[".blog-link;o;;" ;[o;;[o;;@£;[o;;@£;["blog-link;iÜ;iÜ;iÜo;;iä;[o;;;;
+o;;;;
+"	left;@;["
+float;iã;[ ;@;i ;@;i ;T;[".arrow;o;;" ;[o;;[o;;@∑;[o;;@∑;["
+arrow;iä;iä;iäo;;iç;[o;;;;
+o;;;;
+"
+right;@;["
+float;ié;[ ;@;i o;;;;
+o;;;;
+"7px 0 0 15px;@;["padding;iè;[ ;@;i ;@;i ;T;[".blog-link-text;o;;" ;[o;;[o;;@—;[o;;@—;["blog-link-text;iç;iç;iço;;ië;[o;;;;
+o;;;;
+"'Raleway', sans-serif;@;["font-family;ií;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;iì;[ ;@;i o;;;;
+o;;;;
+"	18px;@;["font-size;iî;[ ;@;i ;@;i ;T;["a, a:visited;o;;" ;[o;;[o;;@Ò;[o; 	;@Ò;!0;["a;ië;iëo;;[o;;@Ò;[o; 	;@Ò;!0;["a;iëo;*
+;@Ò;["visited;;+;ië;,0;ië;ië;@;i ;T;[".green-bar;o;;" ;[o;;[o;;@;[o;;@;["green-bar;iw;iw;iwo;;ió;[o;;;;
+o;	;;;
+"5url(/wp-content/themes/wakemojo/img/gate-bg.png);iò;@;["background;iò;[ ;@;i o;;;;
+o;;;;
+"	100%;@;["
+width;iô;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;iö;[ ;@;i o;;iõ;[	o;;;;
+o;;;;
+"1060px;@;["
+width;iú;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;iù;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;iû;[ ;@;i o;;;;
+o;;;;
+"40px 0;@;["padding;iü;[ ;@;i ;@;i ;T;["
+.wrap;o;;" ;[o;;[o;;@A;[o;;@A;["	wrap;iõ;iõ;iõo;;i°;[o;;;;
+o;;;;
+"	left;@;["
+float;i¢;[ ;@;i o;;;;
+o;;;;
+"
+300px;@;["
+width;i£;[ ;@;i o;;i§;[o;;;;
+o;;;;
+"#DFFFFF;@;["background;i•;[ ;@;i o;;;;
+o;#;
+iÙ;$"	-7px;i¶;@;%[ ;&["px;["margin-top;i¶;[ ;@;i o;;;;
+o;;;;
+"0 42px 20px 42px;@;["padding;iß;[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;i®;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;i©;[ ;@;i o;;;;
+o;;;;
+"	12px;@;["font-size;i™;[ ;@;i o;;i´;[
+o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;i¨;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;i≠;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;iÆ;[ ;@;i o;;;;
+o;;;;
+"400;@;["font-weight;iØ;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i∞;[ ;@;i ;@;i ;T;["h2;o;;" ;[o;;[o;;@§;[o; 	;@§;!0;["h2;i´;i´;i´o;;i≤;[o;;;;
+o;;;;
+"	75px;@;["min-height;i≥;[ ;@;i ;@;i ;T;["p;o;;" ;[o;;[o;;@∏;[o; 	;@∏;!0;["p;i≤;i≤;i≤o;;iµ;[o;;;;
+o;;;;
+"center;@;["text-align;i∂;[ ;@;i o;;;;
+o;;;;
+"	#fff;@;["
+color;i∑;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i∏;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["background;iπ;[ ;@;i o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;i∫;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;iª;[ ;@;i o;;;;
+o;;;;
+"
+100px;@;["
+width;iº;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;iΩ;[ ;@;i ;@;i ;T;[".view-all;o;;" ;[o;;[o;;@ˆ;[o;;@ˆ;["view-all;iµ;iµ;iµ;@;i ;T;["
+.text;o;;" ;[o;;[o;;@;[o;;@;["	text;i§;i§;i§;@;i ;T;[".featured-box;o;;" ;[o;;[o;;@;[o;;@;["featured-box;i°;i°;i°o;;i¡;[o;;;;
+o;;;;
+"	80px;@;["margin-right;i¬;[ ;@;i ;@;i ;T;[".boards, .boats;o;;" ;[o;;[o;;@";[o;;@";["boards;i¡;i¡o;;[o;;@";[o;;@";["
+boats;i¡;i¡;i¡;@;i ;T;[".homepage-categories;o;;" ;[o;;[o;;@5;[o;;@5;["homepage-categories;ió;ió;ióo;;i≈;[o;;;;
+o;;;;
+"65px 0 40px;@;["padding;i∆;[ ;@;i o;;i«;[
+o;;;;
+o;	;;;
+";url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);i»;@;["background;i»;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;i…;[ ;@;i o;;;;
+o;;;;
+"1080px;@;["
+width;i ;[ ;@;i o;;;;
+o;;;;
+"30px 335px;@;["padding;iÀ;[ ;@;i o;;iÃ;[
+o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;iÕ;[ ;@;i o;;;;
+o;;;;
+"	40px;@;["font-size;iŒ;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iœ;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;i–;[ ;@;i o;;i—;[o;;;;
+o;;;;
+"#032454;@;["
+color;i“;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;i”;[ ;@;i ;@;i ;T;["a;o;;" ;[o;;[o;;@ã;[o; 	;@ã;!0;["a;i—;i—;i—;@;i ;T;["h2;o;;" ;[o;;[o;;@ó;[o; 	;@ó;!0;["h2;iÃ;iÃ;iÃ;@;i ;T;["
+.wrap;o;;" ;[o;;[o;;@£;[o;;@£;["	wrap;i«;i«;i«;@;i ;T;["	.cta;o;;" ;[o;;[o;;@Ø;[o;;@Ø;["cta;i≈;i≈;i≈o;;iÿ;[o;;;;
+o;	;;;
+";url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);iŸ;@;["background;iŸ;[ ;@;i o;;;;
+o;;;;
+"0 auto 80px auto;@;["margin;i⁄;[ ;@;i o;;;;
+o;;;;
+"
+375px;@;["
+width;i€;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;i‹;[ ;@;i o;;;;
+o;;;;
+"18px 0;@;["padding;i›;[ ;@;i o;;iﬁ;[
+o;;;;
+o;;;;
+"#032454;@;["
+color;iﬂ;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;i‡;[ ;@;i o;;;;
+o;;;;
+"	13px;@;["font-size;i·;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i‚;[ ;@;i o;;;;
+o;;;;
+"	bold;@;["font-weight;i„;[ ;@;i ;@;i ;T;["a;o;;" ;[o;;[o;;@˚;[o; 	;@˚;!0;["a;iﬁ;iﬁ;iﬁ;@;i ;T;[".contact-us;o;;" ;[o;;[o;;@;[o;;@;["contact-us;iÿ;iÿ;iÿo;;iÊ;[o;;;;
+o;"	;
+[	o;	;;;
+"6url(/wp-content/themes/wakemojo/img/waves-bg.jpg);iÁ;@o;	;;;
+"no-repeat;iÁ;@o;	;;;
+"center;iÁ;@o;	;;;
+"
+fixed;iÁ;@;iÁ;@;';(;["background;iÁ;[ ;@;i o;;;;
+o;;;;
+"
+cover;@;["background-size;iË;[ ;@;i o;;;;
+o;;;;
+"65px 0;@;["padding;iÈ;[ ;@;i ;@;i ;T;[".home .cta;o;;" ;[o;;[o;;@/;[o;;@/;["	home;iÊ;iÊo;;@/;[o;;@/;["cta;iÊ;iÊ;iÊo;;iÎ;[
+o;;;;
+o;;;;
+"#99C3FF;@;["background;iÏ;[ ;@;i o;;;;
+o;;;;
+"	100%;@;["
+width;iÌ;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;iÓ;[ ;@;i o;;iÔ;[o;;;;
+o;;;;
+"0 auto;@;["margin;i;[ ;@;i o;;;;
+o;;;;
+"1180px;@;["
+width;iÒ;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;iÚ;[ ;@;i o;;;;
+o;;;;
+"35px 0;@;["padding;iÛ;[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;iÙ;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;iı;[ ;@;i o;;;;
+o;;;;
+"	14px;@;["font-size;iˆ;[ ;@;i o;;i˜;[o;;;;
+o;;;;
+"center;@;["text-align;i¯;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i˘;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;i˙;[ ;@;i o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;i˚;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i¸;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["padding-bottom;i˝;[ ;@;i ;@;i ;T;["h2;o;;" ;[o;;[o;;@¶;[o; 	;@¶;!0;["h2;i˜;i˜;i˜o;;iˇ;[o;;;;
+o;;;;
+"	30px;@;["padding-bottom;i ;[ ;@;i ;@;i ;T;[".border;o;;" ;[o;;[o;;@∫;[o;;@∫;["border;iˇ;iˇ;iˇo;;i;[o;;;;
+o;;;;
+"	bold;@;["font-weight;i;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i;[ ;@;i o;;i;[o;;;;
+o;;;;
+"	#fff;@;["
+color;i;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;i;[ ;@;i ;@;i ;T;["a;o;;" ;[o;;[o;;@‚;[o; 	;@‚;!0;["a;i;i;i;@;i ;T;[".title;o;;" ;[o;;[o;;@Ó;[o;;@Ó;["
+title;i;i;io;;i
+;[o;;i;[o;;;;
+o;;;;
+"#032454;@;["
+color;i;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;i;[ ;@;i ;@;i ;T;["a;o;;" ;[o;;[o;;@
+;[o; 	;@
+;!0;["a;i;i;io;;;;
+o;;;;
+"#77CA93;@;["background;i;[ ;@;i o;;;;
+o;;;;
+"
+5px 0;@;["padding;i;[ ;@;i o;;;;
+o;;;;
+"	88px;@;["
+width;i;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;i;[ ;@;i o;;;;
+o;;;;
+"	11px;@;["font-size;i;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i;[ ;@;i ;@;i ;T;[".read-more;o;;" ;[o;;[o;;@:;[o;;@:;["read-more;i
+;i
+;i
+;@;i ;T;["
+.wrap;o;;" ;[o;;[o;;@F;[o;;@F;["	wrap;iÔ;iÔ;iÔo;;i;[o;;;;
+o;;;;
+"	left;@;["
+float;i;[ ;@;i o;;;;
+o;;;;
+"
+230px;@;["
+width;i;[ ;@;i o;;i;[o;;;;
+o;;;;
+"	86px;@;["margin-right;i;[ ;@;i ;@;i ;T;["&.id-0, &.id-1, &.id-2;o;;" ;[o;;[o;;@h;[o;);@h;io;;@h;["	id-0;i;io;;[o;;@h;[o;);@h;io;;@h;["	id-1;i;io;;[o;;@h;[o;);@h;io;;@h;["	id-2;i;i;i;@;i ;T;[".featured-post;o;;" ;[o;;[o;;@Ö;[o;;@Ö;["featured-post;i;i;i;@;i ;T;[".featured-posts;o;;" ;[o;;[o;;@ë;[o;;@ë;["featured-posts;iÎ;iÎ;iÎo;;i;[
+o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;i ;[ ;@;i o;;;;
+o;;;;
+"	#fff;@;["
+color;i!;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;i";[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i#;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i$;[ ;@;i ;@;i ;T;[".page-title;o;;" ;[o;;[o;;@Ω;[o;;@Ω;["page-title;i;i;io;;i&;[o;;;;
+o;;;;
+"	100%;@;["
+width;i';[ ;@;i o;;;;
+o;	;;;
+"5url(/wp-content/themes/wakemojo/img/gate-bg.png);i(;@;["background;i(;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;i);[ ;@;i o;;i*;[	o;;;;
+o;;;;
+"0 auto;@;["margin;i+;[ ;@;i o;;;;
+o;;;;
+"1316px;@;["
+width;i,;[ ;@;i o;;;;
+o;"	;
+[o;	;;;
+"7url(/wp-content/themes/wakemojo/img/blue-mist.png);i-;@o;	;;;
+"repeat-y;i-;@o;	;;;
+"center;i-;@;i-;@;';(;["background;i-;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;i.;[ ;@;i ;@;i ;T;["
+.wrap;o;;" ;[o;;[o;;@˝;[o;;@˝;["	wrap;i*;i*;i*o;;i0;[o;;;;
+o;;;;
+"0 auto;@;["margin;i1;[ ;@;i o;;;;
+o;;;;
+"1080px;@;["
+width;i2;[ ;@;i o;;;;
+o;;;;
+"hidden;@;["overflow;i3;[ ;@;i o;;;;
+o;;;;
+"	#fff;@;["background;i4;[ ;@;i o;;;;
+o;;;;
+"30px 0 0 30px;@;["padding;i5;[ ;@;i o;;i6;[o;;;;
+o;;;;
+"30px 150px;@;["padding;i7;[ ;@;i o;;i8;[	o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;i9;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;i:;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i;;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i<;[ ;@;i ;@;i ;T;["h2;o;;" ;[o;;[o;;@K;[o; 	;@K;!0;["h2;i8;i8;i8o;;i>;[o;;;;
+o;;;;
+"#032454;@;["
+color;i?;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i@;[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;iA;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iB;[ ;@;i o;;;;
+o;;;;
+"600;@;["font-weight;iC;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;iD;[ ;@;i ;@;i ;T;["h3, h3 a;o;;" ;[o;;[o;;@};[o; 	;@};!0;["h3;i>;i>o;;[o;;@};[o; 	;@};!0;["h3;i>;i>o;;@};[o; 	;@};!0;["a;i>;i>;i>;@;i ;T;["&.review, &.blog;o;;" ;[o;;[o;;@ï;[o;);@ï;i6o;;@ï;["review;i6;i6o;;[o;;@ï;[o;);@ï;i6o;;@ï;["	blog;i6;i6;i6o;;iG;[	o;;iH;[o;;;;
+o;;;;
+"hidden;@;["overflow;iI;[ ;@;i ;@;i ;T;[".post-container;o;;" ;[o;;[o;;@¥;[o;;@¥;["post-container;iH;iH;iHo;;iK;[o;;;;
+o;;;;
+"	left;@;["
+float;iL;[ ;@;i ;@;i ;T;[".image;o;;" ;[o;;[o;;@»;[o;;@»;["
+image;iK;iK;iKo;;iN;[o;;;;
+o;;;;
+"
+right;@;["
+float;iO;[ ;@;i o;;;;
+o;;;;
+"
+400px;@;["
+width;iP;[ ;@;i ;@;i ;T;[".content;o;;" ;[o;;[o;;@‚;[o;;@‚;["content;iN;iN;iNo;;iR;[o;;;;
+o;;;;
+"#8FB9FF;@;["
+color;iS;[ ;@;i ;@;i ;T;["h3;o;;" ;[o;;[o;;@ˆ;[o; 	;@ˆ;!0;["h3;iR;iR;iR;@;i ;T;["&.blog;o;;" ;[o;;[o;;@	;[o;);@	;iGo;;@	;["	blog;iG;iG;iGo;;iV;[o;;;;
+o;;;;
+"'Raleway', sans-serif;@;["font-family;iW;[ ;@;i o;;;;
+o;;;;
+"500;@;["font-weight;iX;[ ;@;i o;;;;
+o;;;;
+"#8FB9FF;@;["
+color;iY;[ ;@;i ;@;i ;T;["&.page;o;;" ;[o;;[o;;@#	;[o;);@#	;iVo;;@#	;["	page;iV;iV;iV;@;i ;T;[".inner-wrap;o;;" ;[o;;[o;;@0	;[o;;@0	;["inner-wrap;i0;i0;i0o;;i\;[o;;;;
+o;;;;
+"	left;@;["
+float;i];[ ;@;i o;;;;
+o;;;;
+"
+322px;@;["
+width;i^;[ ;@;i o;;;;
+o;;;;
+"
+262px;@;["min-height;i_;[ ;@;i o;;;;
+o;;;;
+"0 28px 28px 0;@;["margin;i`;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;ia;[ ;@;i o;;;;
+o;;;;
+"1px solid #809FCB;@;["border;ib;[ ;@;i ;@;i ;T;[".brand-container;o;;" ;[o;;[o;;@b	;[o;;@b	;["brand-container;i\;i\;i\o;;id;[o;;;;
+o;;;;
+"
+block;@;["display;ie;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["background;if;[ ;@;i o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;ig;[ ;@;i o;;;;
+o;;;;
+"	#fff;@;["
+color;ih;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;ii;[ ;@;i o;;;;
+o;;;;
+"	12px;@;["font-size;ij;[ ;@;i o;;;;
+o;;;;
+"	90px;@;["
+width;ik;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;il;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;im;[ ;@;i o;;;;
+o;;;;
+"	none;@;["text-decoration;in;[ ;@;i ;@;i ;T;[".view-all-boards;o;;" ;[o;;[o;;@¨	;[o;;@¨	;["view-all-boards;id;id;id;@;i ;T;[".brands-loop;o;;" ;[o;;[o;;@∏	;[o;;@∏	;["brands-loop;i&;i&;i&o;;iq;[o;;;;
+o;"	;
+[	o;	;;;
+"6url(/wp-content/themes/wakemojo/img/waves-bg.jpg);ir;@o;	;;;
+"no-repeat;ir;@o;	;;;
+"center;ir;@o;	;;;
+"
+fixed;ir;@;ir;@;';(;["background;ir;[ ;@;i o;;;;
+o;;;;
+"
+cover;@;["background-size;is;[ ;@;i ;@;i ;T;["#bottom-container;o;;" ;[o;;[o;;@⁄	;[o:Sass::Selector::Id;@⁄	;["bottom-container;iq;iq;iqo;;iu;[	o;;;;
+o;;;;
+"#032454;@;["
+color;iv;[ ;@;i o;;;;
+o;;;;
+"'Oswald', sans-serif;@;["font-family;iw;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;ix;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iy;[ ;@;i ;@;i ;T;[".board-brand-title;o;;" ;[o;;[o;;@ 
+;[o;;@ 
+;["board-brand-title;iu;iu;iuo;;i{;[o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;i|;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i};[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;i~;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;i;[ ;@;i o;;;;
+o;;;;
+"600;@;["font-weight;iÄ;[ ;@;i o;;;;
+o;;;;
+"1px;@;["letter-spacing;iÅ;[ ;@;i ;@;i ;T;[".quote;o;;" ;[o;;[o;;@2
+;[o;;@2
+;["
+quote;i{;i{;i{o;;iÉ;[
+o;;;;
+o;;;;
+"30px 30px 30px 0;@;["padding;iÑ;[ ;@;i o;;;;
+o;;;;
+"#8FB9FF;@;["
+color;iÖ;[ ;@;i o;;;;
+o;;;;
+"'Raleway', sans-serif;@;["font-family;iÜ;[ ;@;i o;;;;
+o;;;;
+"	18px;@;["font-size;iá;[ ;@;i o;;;;
+o;;;;
+"500;@;["font-weight;ià;[ ;@;i ;@;i ;T;[".brand-blurb;o;;" ;[o;;[o;;@^
+;[o;;@^
+;["brand-blurb;iÉ;iÉ;iÉo;;iä;[o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;iã;[ ;@;i o;;;;
+o;;;;
+"#77C089;@;["
+color;iå;[ ;@;i o;;;;
+o;;;;
+"	14px;@;["font-size;iç;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;ié;[ ;@;i o;;;;
+o;;;;
+"underline;@;["text-decoration;iè;[ ;@;i o;;iê;[o;;;;
+o;;;;
+"#77C089;@;["
+color;ië;[ ;@;i ;@;i ;T;["a, a:visited;o;;" ;[o;;[o;;@í
+;[o; 	;@í
+;!0;["a;iê;iêo;;[o;;@í
+;[o; 	;@í
+;!0;["a;iêo;*
+;@í
+;["visited;;+;iê;,0;iê;iê;@;i ;T;[".brand-link;o;;" ;[o;;[o;;@®
+;[o;;@®
+;["brand-link;iä;iä;iäo;;iî;[o;;;;
+o;"	;
+[o;	;;;
+";url(/wp-content/themes/wakemojo/img/loop-title-bg.png);iï;@o;	;;;
+"no-repeat;iï;@o;	;;;
+"center;iï;@;iï;@;';(;["background;iï;[ ;@;i o;;;;
+o;;;;
+"Helvetica, sans-serif;@;["font-family;iñ;[ ;@;i o;;;;
+o;;;;
+"#032454;@;["
+color;ió;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;iò;[ ;@;i o;;;;
+o;;;;
+"uppercase;@;["text-transform;iô;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;iö;[ ;@;i o;;;;
+o;;;;
+"20px 0;@;["padding;iõ;[ ;@;i ;@;i ;T;[".boards-loop-title;o;;" ;[o;;[o;;@Ê
+;[o;;@Ê
+;["boards-loop-title;iî;iî;iîo;;iù;[o;;;;
+o;;;;
+"
+157px;@;["max-width;iû;[ ;@;i ;@;i ;T;[".brand-image.board;o;;" ;[o;;[o;;@˙
+;[o;;@˙
+;["brand-image;iùo;;@˙
+;["
+board;iù;iù;iùo;;i†;[o;;;;
+o;;;;
+"
+780px;@;["
+width;i°;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;i¢;[ ;@;i o;;;;
+o;;;;
+"'Raleway', sans-serif;@;["font-family;i£;[ ;@;i o;;;;
+o;;;;
+"500;@;["font-weight;i§;[ ;@;i o;;;;
+o;;;;
+"#8FB9FF;@;["
+color;i•;[ ;@;i o;;;;
+o;;;;
+"	20px;@;["font-size;i¶;[ ;@;i o;;;;
+o;;;;
+"40px 0;@;["padding;iß;[ ;@;i ;@;i ;T;[".bottom-summary;o;;" ;[o;;[o;;@5;[o;;@5;["bottom-summary;i†;i†;i†o;;i©;[o;;;;
+o;;;;
+"	left;@;["
+float;i™;[ ;@;i ;@;i ;T;[".rating-title;o;;" ;[o;;[o;;@I;[o;;@I;["rating-title;i©;i©;i©o;;i¨;[o;;;;
+o;;;;
+"
+right;@;["
+float;i≠;[ ;@;i ;@;i ;T;[".rating;o;;" ;[o;;[o;;@];[o;;@];["rating;i¨;i¨;i¨o;;iØ;[o;;;;
+o;;;;
+"hidden;@;["overflow;i∞;[ ;@;i o;;;;
+o;;;;
+"
+420px;@;["
+width;i±;[ ;@;i ;@;i ;T;[".rating-container;o;;" ;[o;;[o;;@w;[o;;@w;["rating-container;iØ;iØ;iØo;;i≥;[o;;;;
+o;;;;
+"50px 0;@;["padding;i¥;[ ;@;i o;;;;
+o;;;;
+"center;@;["text-align;iµ;[ ;@;i o;;;;
+o;;;;
+"pointer;@;["cursor;i∂;[ ;@;i o;;;;
+o;;;;
+"
+290px;@;["
+width;i∑;[ ;@;i o;;;;
+o;;;;
+"0 auto;@;["margin;i∏;[ ;@;i o;;iπ;[o;;;;
+o;;;;
+"	20px;@;["padding-bottom;i∫;[ ;@;i ;@;i ;T;["h3;o;;" ;[o;;[o;;@´;[o; 	;@´;!0;["h3;iπ;iπ;iπ;@;i ;T;[".expand;o;;" ;[o;;[o;;@∑;[o;;@∑;["expand;i≥;i≥;i≥o;;iΩ;[o;;;;
+o;;;;
+"	none;@;["display;iæ;[ ;@;i ;@;i ;T;[".review-content;o;;" ;[o;;[o;;@À;[o;;@À;["review-content;iΩ;iΩ;iΩo;;i¿;[o;;;;
+o;;;;
+"	left;@;["
+float;i¡;[ ;@;i o;;;;
+o;;;;
+"0 45px 30px 0;@;["margin;i¬;[ ;@;i ;@;i ;T;[".fancybox;o;;" ;[o;;[o;;@Â;[o;;@Â;["fancybox;i¿;i¿;i¿;@;T

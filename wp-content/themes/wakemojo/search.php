@@ -1,38 +1,82 @@
 <?php
 /**
- * The template for displaying Search Results pages.
+ * This is the template for display all pages
  *
  * @package WakeMojo
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+        	<div class="logo"><a href="http://wakemojocom.wpengine.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
+        	<div class="hero">
+                <?php if(get_field('page_hero_image')){ ?>
+        		  <img src="<?php the_field('page_hero_image'); ?>">
+                <?php }
+                else{ ?>
+                    <img src="/wp-content/themes/wakemojo/img/hero-2.jpg">  
+                <?php } ?>
+        	</div>
+        	<div class="green-bar">
+        		<div class="wrap">
+        			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'WakeMojo' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+        		</div>
+        	</div>
+        	<div class="page-content">
+                <div class="brands-loop">
+                    <div class="wrap">
+                        <div class="inner-wrap page">
+                           <?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+                           	<?php /* Start the Loop */ ?>
+                           	<?php while ( have_posts() ) : the_post(); ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'WakeMojo' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+                           		<div class="result">
+                           			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                           		</div>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+                           	<?php endwhile; ?>
 
-				<?php get_template_part( 'content', 'search' ); ?>
+                           	<?php WakeMojo_paging_nav(); ?>
 
-			<?php endwhile; ?>
+                           <?php else : ?>
 
-			<?php WakeMojo_paging_nav(); ?>
+                           	<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php else : ?>
+                           <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+      </main>
+  </div>
+</div>
+<div id="bottom-container">
+    <div class="cta">
+        <div class="wrap">
+            <h2><a href="<?php the_field('page_cta_link'); ?>"><?php the_field('page_cta_text'); ?></a></h2>
+        </div>
+    </div>
+    <div class="contact-us">
+        <a href="<?php the_field('page_cta_link'); ?>">Contact Us >></a>
+    </div>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+  <?php get_footer(); ?>
 
-		<?php endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

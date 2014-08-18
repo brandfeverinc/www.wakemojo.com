@@ -1,14 +1,14 @@
 /*--------------------------------------------------------------
 10.02 Content Footer
 --------------------------------------------------------------*/
-.home footer{
-	background: url(/wp-content/themes/wakemojo/img/footer-bg.jpg) no-repeat top;
+footer{
+	background: url(/wp-content/themes/wakemojo/img/header-bg.png);
 	width: 100%;
 	overflow: hidden;
 	background-size: cover;
 	font-family: Helvetica, sans-serif;
 	color: #fff;
-	padding: 140px 0 50px;
+	padding: 80px 0 50px;
 	.wrap{
 		margin: 0 auto;
 		width: 1180px;
@@ -25,19 +25,33 @@
 		float: left;
 	}
 	.col-1{
-		width: 630px;
+		width: 430px;
 	}
 	.col-1, .col-2{
-		margin-right: 183px;
+		margin-right: 101px;
 	}
-	.facebook, .blog-button{
+	.col-3{
+		width: 111px;
+	}
+	.facebook, .blog-button, .insta, .gplus{
 		float: left;
 	}
-	.facebook{
+	.facebook, .blog-button{
+		margin-bottom: 10px;
+	}
+	.facebook, .insta{
 		margin-right: 15px;
 	}
 	.copyright{
 		clear: both;
 		padding-top: 20px;
 	}
+}
+.home footer{
+	background: url(/wp-content/themes/wakemojo/img/footer-bg.jpg) no-repeat top;
+	padding: 140px 0 50px;
+}
+.email a, .email a:hover{
+	color: #fff;
+	text-decoration: none;
 }

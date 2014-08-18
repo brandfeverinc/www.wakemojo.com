@@ -1,13 +1,20 @@
 /*--------------------------------------------------------------
 10.04 Content - Pages
 --------------------------------------------------------------*/
-
-.page-content {
-	margin: 1.5em 0 0;
-}
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+h2, h3{
+	color: #032454;
+	font-size: 20px !important;
+	text-transform: uppercase;
+}
+h2{
+	font-family: 'Oswald', sans-serif !important;
+}
+h3{
+	font-family: Helvetica, sans-serif !important;
 }
 .logo{
 	text-align: center;
@@ -23,6 +30,85 @@
 	z-index: 9;
 	img{
 		width: 100%;
+	}
+	&.single{
+		background: url(/wp-content/themes/wakemojo/img/boards-hero.jpg) no-repeat top center;
+		background-size: cover;
+		padding: 14% 0;
+		top: 0;
+		left: 0;
+	}
+	.wrap{
+		position: relative;
+		overflow: hidden;
+		width: 59%;
+		margin: 0 auto;
+		font-family: Helvetica, sans-serif;
+		font-size: 12px;
+		text-align: left;
+		.board-image{
+			float: left;
+			width: 60%;
+			text-align: center;
+		}
+		.sidebar{
+			color: #032454;
+			float: right;
+			width: 37%;
+		}
+		.sidebar-top{
+			background: url(/wp-content/themes/wakemojo/img/sidebar-bg.png);
+			padding: 0 30px;
+		}
+		.brand-name{
+			font-family: 'Oswald', sans-serif;
+			font-size: 32px;
+			text-transform: uppercase;
+			padding-top: 15px;
+			a, a:visited{
+				color: #032454;
+				text-decoration: none;
+			}
+		}
+		.summary{
+			padding-bottom: 20px;
+		}
+		.board-title{
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding-bottom: 20px;
+		}
+		.team-size{
+			padding-bottom: 20px;
+		}
+		.team-rider, .fins-title, .shaped-by-title, .cf-title{
+			font-family: Helvetica, sans-serif;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		.shaped-by, .construction-features{
+			padding-bottom: 20px;
+		}
+		img{
+			max-width: 479px;
+			max-height: 615px;
+			width: auto;
+		}
+		.sidebar-bottom{
+			padding: 20px 30px;
+			background: url(/wp-content/themes/wakemojo/img/link-bg.png);
+			margin-top: 10px;
+			a{
+				color: #032454;
+				text-transform: uppercase;
+				font-family: Helvetica, sans-serif;
+				text-decoration: none;
+				font-size: 13px;
+				font-weight: 600;
+			}
+		}
 	}
 }
 .green-bar{
@@ -108,10 +194,8 @@
 		margin-right: 80px;
 	}
 }
-.homepage-cta{
-	background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
-	background-size: cover;
-	padding: 65px 0;
+.cta{
+	padding: 65px 0 40px;
 	.wrap{
 		background: url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);
 		margin: 0 auto;
@@ -128,6 +212,25 @@
 			}
 		}
 	}
+}
+.contact-us{
+	background: url(/wp-content/themes/wakemojo/img/trans-blue-bg.png);
+	margin: 0 auto 80px auto;
+	width: 375px;
+	text-align: center;
+	padding: 18px 0;
+	a{
+		color: #032454;
+		text-decoration: none;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+.home .cta{
+	background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
+	background-size: cover;
+	padding: 65px 0;
 }
 .featured-posts{
 	background: #99C3FF;
@@ -188,8 +291,164 @@
 	text-transform: uppercase;
 	font-size: 20px;
 }
-
-
+.brands-loop{
+	width: 100%;
+	background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
+	overflow: hidden;
+	.wrap{
+		margin: 0 auto;
+		width: 1316px;
+		background: url(/wp-content/themes/wakemojo/img/blue-mist.png) repeat-y center;
+		overflow: hidden;
+	}
+	.inner-wrap{
+		margin: 0 auto;
+		width: 1080px;
+		overflow: hidden;
+		background: #fff;
+		padding: 30px 0 0 30px;
+		&.review, &.blog{
+			padding: 30px 150px;
+			h2{
+				font-family: 'Oswald', sans-serif;
+				color: #032454;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+			h3, h3 a{
+				color: #032454;
+				font-size: 20px;
+				font-family: Helvetica, sans-serif;
+				text-transform: uppercase;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+		&.blog{
+			.post-container{
+				overflow: hidden;
+			}
+			.image{
+				float: left;
+			}
+			.content{
+				float: right;
+				width: 400px;
+			}
+			h3{
+				color: #8FB9FF;
+			}
+		}
+		&.page{
+			font-family: 'Raleway', sans-serif;
+			font-weight: 500;
+			color: #8FB9FF;
+		}
+	}
+	.brand-container{
+		float: left;
+		width: 322px;
+		min-height: 262px;
+		margin: 0 28px 28px 0;
+		text-align: center;
+		border: 1px solid #809FCB;
+	}
+	.view-all-boards{
+		display: block;
+		background: #032454;
+		font-family: 'Oswald', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 12px;
+		width: 90px;
+		text-align: center;
+		margin: 0 auto;
+		text-decoration: none;
+	}
+}
+#bottom-container{
+	background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+.board-brand-title{
+	color: #032454;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.quote{
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #032454;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.brand-blurb{
+	padding: 30px 30px 30px 0;
+	color: #8FB9FF;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.brand-link{
+	font-family: Helvetica, sans-serif;
+	color: #77C089;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	a, a:visited{
+		color: #77C089;
+	}
+}
+.boards-loop-title{
+	background: url(/wp-content/themes/wakemojo/img/loop-title-bg.png) no-repeat center;
+	font-family: Helvetica, sans-serif;
+	color: #032454;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px 0;
+}
+.brand-image.board{
+	max-width: 157px;
+}
+.bottom-summary{
+	width: 780px;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #8FB9FF;
+	font-size: 20px;
+	padding: 40px 0;
+}
+.rating-title{
+	float: left;
+}
+.rating{
+	float: right;
+}
+.rating-container {
+	overflow: hidden;
+	width: 420px;
+}
+.expand {
+	padding: 50px 0;
+	text-align: center;
+	cursor: pointer;
+	width: 290px;
+	margin: 0 auto;
+	h3{
+		padding-bottom: 20px;
+	}
+}
+.review-content{
+	display: none;
+}
+.fancybox{
+	float: left;
+	margin: 0 45px 30px 0;
+}
 
 
 
