@@ -28,12 +28,15 @@ a:active {
 	text-decoration: none;
 }
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background: url(/wp-content/themes/wakemojo/img/header-bg.png);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	display: none;
 	float: left;
 	left: 0;
+	padding: 0 0 5px 20px;
 	position: absolute;
-	top: 1.5em;
+	top: 100%;
 	z-index: 99999;
 }
 .main-navigation ul ul ul {
@@ -116,5 +119,12 @@ a.menu-toggle, a:visited.menu-toggle{
 		&.lastnav{
 			padding: 10px 0 10px 15px;
 		}
+	}
+}
+.sub-menu{
+	li{
+		position: relative;
+		float: none;
+		padding: 5px 0 !important;
 	}
 }

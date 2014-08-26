@@ -46,35 +46,6 @@ $term = $wp_query->queried_object; ?>
                         <div class="boards-loop-title">
                             Browse <?php echo $term->name; ?> boards
                         </div>
-                        <div class="sort-buttons">
-                            <h2>Sort By - </h2>
-                            <div class="option-set" data-group="style">
-                                <input type="checkbox" value=".wave" id="wave" />
-                                <label for="wave">Wave</label>
-                                <input type="checkbox" value=".skim" id="skim" />
-                                <label for="skim">Skim</label>
-                                <input type="checkbox" value=".hybrid" id="hybrid" />
-                                <label for="hybrid">Hybrid</label>
-                            </div>
-                            <div class="option-set" data-group="skill-level">
-                                <input type="checkbox" value=".beginner" id="beginner" />
-                                <label for="beginner">Beginner</label>
-                                <input type="checkbox" value=".intermediate" id="intermediate" />
-                                <label for="intermediate">Intermediate</label>
-                                <input type="checkbox" value=".expert" id="expert" />
-                                <label for="expert">Expert</label>
-                            </div>
-                            <div class="option-set" data-group="weight-range">
-                                <input type="checkbox" value=".w-50-150" id="w-50-150" />
-                                <label for="w-50-150">50-150</label>
-                                <input type="checkbox" value=".w-150-200" id="w-150-200" />
-                                <label for="w-150-200">150-200</label>
-                                <input type="checkbox" value=".w-200-300" id="w-200-300" />
-                                <label for="w-200-300">200-300</label>
-                                <input type="checkbox" value=".w-300" id="w-300" />
-                                <label for="w-300">300+</label>
-                            </div>
-                        </div>
                         <div class="board-container">
                             <?php $args = array(
                                 'post_type' => 'boards',
@@ -89,9 +60,10 @@ $term = $wp_query->queried_object; ?>
                             if( $query->have_posts() ){
                                 while( $query->have_posts() ){
                                     $query->the_post(); ?>
-                                    <div class="brand-container <?php the_field('skill_level'); ?> <?php the_field('weight_range'); ?> <?php the_field('style'); ?> <?php the_field('price'); ?>">
+                                    <div class="brand-container">
                                         <a href="<?php the_permalink(); ?>">
                                         <img class="brand-image board" src="<?php the_field('board_image'); ?>">
+                                        <p><?php the_title(); ?></p>
                                         </a>
                                         <a class="view-all-boards" href="<?php the_permalink(); ?>">More Info</a>
                                     </div>

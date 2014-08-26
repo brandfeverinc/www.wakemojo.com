@@ -9,9 +9,9 @@ jQuery(document).ready(function($) {
 			$(this).parents('.brand-container').css('height', container_height);
 			var padding_height = ((262 - height) / 2) - 20;
 			var padding_height_boat = ((container_height - height) / 2) - 20;
-			var view_all_margin = (((height + padding_height) - height) / 4);
+			var view_all_margin = padding_height / 4;
 			var view_all_margin_boat = (((container_height + padding_height) - height) / 4);
-			if( height >= 220 ){
+			if( height >= 150 ){
 				$(this).css('padding-top', padding_height_boat, 'padding-bottom', padding_height_boat);
 			}
 			else{

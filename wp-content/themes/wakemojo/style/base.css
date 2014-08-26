@@ -192,22 +192,21 @@ header {
 .header-wrap {
   margin: 0 auto;
   width: 1060px;
-  overflow: hidden;
   padding: 6px 0;
 }
 
-/* line 19, _content-header.scss */
+/* line 18, _content-header.scss */
 .search-box {
   float: right;
 }
-/* line 22, _content-header.scss */
+/* line 21, _content-header.scss */
 .search-box input[type="text"] {
   background: #DFFFFF;
   border-radius: 0;
   border: 0;
   margin-top: 4px;
 }
-/* line 28, _content-header.scss */
+/* line 27, _content-header.scss */
 .search-box input::-webkit-input-placeholder {
   text-transform: uppercase !important;
   font-family: Helvetica, sans-serif;
@@ -216,7 +215,7 @@ header {
   padding-top: 2px;
   padding-left: 5px;
 }
-/* line 36, _content-header.scss */
+/* line 35, _content-header.scss */
 .search-box input::-moz-placeholder {
   text-transform: uppercase !important;
   font-family: Helvetica, sans-serif;
@@ -225,7 +224,7 @@ header {
   padding-top: 2px;
   padding-left: 5px;
 }
-/* line 44, _content-header.scss */
+/* line 43, _content-header.scss */
 .search-box input:moz-placeholder {
   text-transform: uppercase !important;
   font-family: Helvetica, sans-serif;
@@ -234,7 +233,7 @@ header {
   padding-top: 2px;
   padding-left: 5px;
 }
-/* line 52, _content-header.scss */
+/* line 51, _content-header.scss */
 .search-box input:-ms-input-placeholder {
   text-transform: uppercase !important;
   font-family: Helvetica, sans-serif;
@@ -323,7 +322,7 @@ h3 {
 /* line 59, _content-pages.scss */
 .hero .wrap .sidebar-top {
   background: url(/wp-content/themes/wakemojo/img/sidebar-bg.png);
-  padding: 0 30px;
+  padding: 0 30px 20px 30px;
 }
 /* line 63, _content-pages.scss */
 .hero .wrap .brand-name {
@@ -606,19 +605,24 @@ h3 {
 }
 
 /* line 294, _content-pages.scss */
+.search .inner-wrap {
+  padding: 30px !important;
+}
+
+/* line 297, _content-pages.scss */
 .brands-loop {
   width: 100%;
   background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
   overflow: hidden;
 }
-/* line 298, _content-pages.scss */
+/* line 301, _content-pages.scss */
 .brands-loop .wrap {
   margin: 0 auto;
   width: 1316px;
   background: url(/wp-content/themes/wakemojo/img/blue-mist.png) repeat-y center;
   overflow: hidden;
 }
-/* line 304, _content-pages.scss */
+/* line 307, _content-pages.scss */
 .brands-loop .inner-wrap {
   margin: 0 auto;
   width: 1080px;
@@ -626,18 +630,18 @@ h3 {
   background: #fff;
   padding: 30px 0 0 30px;
 }
-/* line 310, _content-pages.scss */
+/* line 313, _content-pages.scss */
 .brands-loop .inner-wrap.review, .brands-loop .inner-wrap.blog {
   padding: 30px 150px;
 }
-/* line 312, _content-pages.scss */
+/* line 315, _content-pages.scss */
 .brands-loop .inner-wrap.review h2, .brands-loop .inner-wrap.blog h2 {
   font-family: 'Oswald', sans-serif;
   color: #032454;
   font-size: 20px;
   text-transform: uppercase;
 }
-/* line 318, _content-pages.scss */
+/* line 321, _content-pages.scss */
 .brands-loop .inner-wrap.review h3, .brands-loop .inner-wrap.review h3 a, .brands-loop .inner-wrap.blog h3, .brands-loop .inner-wrap.blog h3 a {
   color: #032454;
   font-size: 20px;
@@ -646,30 +650,30 @@ h3 {
   font-weight: 600;
   text-decoration: none;
 }
-/* line 328, _content-pages.scss */
+/* line 331, _content-pages.scss */
 .brands-loop .inner-wrap.blog .post-container {
   overflow: hidden;
 }
-/* line 331, _content-pages.scss */
+/* line 334, _content-pages.scss */
 .brands-loop .inner-wrap.blog .image {
   float: left;
 }
-/* line 334, _content-pages.scss */
+/* line 337, _content-pages.scss */
 .brands-loop .inner-wrap.blog .content {
   float: right;
   width: 400px;
 }
-/* line 338, _content-pages.scss */
+/* line 341, _content-pages.scss */
 .brands-loop .inner-wrap.blog h3 {
   color: #8FB9FF;
 }
-/* line 342, _content-pages.scss */
+/* line 345, _content-pages.scss */
 .brands-loop .inner-wrap.page {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #8FB9FF;
 }
-/* line 348, _content-pages.scss */
+/* line 351, _content-pages.scss */
 .brands-loop .brand-container {
   float: left;
   width: 322px;
@@ -678,14 +682,14 @@ h3 {
   text-align: center;
   border: 1px solid #809FCB;
 }
-/* line 355, _content-pages.scss */
+/* line 358, _content-pages.scss */
 .brands-loop .brand-container p {
   font-family: 'Oswald', sans-serif;
   color: #032454;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 362, _content-pages.scss */
+/* line 365, _content-pages.scss */
 .brands-loop .view-all-boards {
   display: block;
   background: #032454;
@@ -699,13 +703,13 @@ h3 {
   text-decoration: none;
 }
 
-/* line 375, _content-pages.scss */
+/* line 378, _content-pages.scss */
 #bottom-container {
   background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
   background-size: cover;
 }
 
-/* line 379, _content-pages.scss */
+/* line 382, _content-pages.scss */
 .board-brand-title {
   color: #032454;
   font-family: 'Oswald', sans-serif;
@@ -713,7 +717,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 385, _content-pages.scss */
+/* line 388, _content-pages.scss */
 .quote {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
@@ -723,7 +727,7 @@ h3 {
   letter-spacing: 1px;
 }
 
-/* line 393, _content-pages.scss */
+/* line 396, _content-pages.scss */
 .brand-blurb {
   padding: 30px 30px 30px 0;
   color: #8FB9FF;
@@ -732,7 +736,7 @@ h3 {
   font-weight: 500;
 }
 
-/* line 400, _content-pages.scss */
+/* line 403, _content-pages.scss */
 .brand-link {
   font-family: Helvetica, sans-serif;
   color: #77C089;
@@ -740,12 +744,12 @@ h3 {
   text-transform: uppercase;
   text-decoration: underline;
 }
-/* line 406, _content-pages.scss */
+/* line 409, _content-pages.scss */
 .brand-link a, .brand-link a:visited {
   color: #77C089;
 }
 
-/* line 410, _content-pages.scss */
+/* line 413, _content-pages.scss */
 .boards-loop-title {
   background: url(/wp-content/themes/wakemojo/img/loop-title-bg.png) no-repeat center;
   font-family: Helvetica, sans-serif;
@@ -756,12 +760,12 @@ h3 {
   padding: 20px 0;
 }
 
-/* line 419, _content-pages.scss */
+/* line 422, _content-pages.scss */
 .brand-image.board {
   max-width: 157px;
 }
 
-/* line 422, _content-pages.scss */
+/* line 425, _content-pages.scss */
 .bottom-summary {
   width: 780px;
   margin: 0 auto;
@@ -772,23 +776,23 @@ h3 {
   padding: 40px 0;
 }
 
-/* line 431, _content-pages.scss */
+/* line 434, _content-pages.scss */
 .rating-title {
   float: left;
 }
 
-/* line 434, _content-pages.scss */
+/* line 437, _content-pages.scss */
 .rating {
   float: right;
 }
 
-/* line 437, _content-pages.scss */
+/* line 440, _content-pages.scss */
 .rating-container {
   overflow: hidden;
   width: 420px;
 }
 
-/* line 441, _content-pages.scss */
+/* line 444, _content-pages.scss */
 .expand {
   padding: 50px 0;
   text-align: center;
@@ -796,77 +800,77 @@ h3 {
   width: 290px;
   margin: 0 auto;
 }
-/* line 447, _content-pages.scss */
+/* line 450, _content-pages.scss */
 .expand h3 {
   padding-bottom: 20px;
 }
 
-/* line 451, _content-pages.scss */
+/* line 454, _content-pages.scss */
 .review-content {
   display: none;
 }
 
-/* line 454, _content-pages.scss */
+/* line 457, _content-pages.scss */
 .fancybox {
   float: left;
   margin: 0 45px 30px 0;
 }
 
-/* line 458, _content-pages.scss */
+/* line 461, _content-pages.scss */
 .sorting-data {
   display: none;
 }
 
-/* line 461, _content-pages.scss */
+/* line 464, _content-pages.scss */
 .sort-buttons, .filter-buttons {
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   position: relative;
   width: 100%;
 }
-/* line 466, _content-pages.scss */
+/* line 469, _content-pages.scss */
 .sort-buttons h2, .sort-buttons div, .filter-buttons h2, .filter-buttons div {
   float: left;
   margin-right: 15px;
 }
-/* line 470, _content-pages.scss */
+/* line 473, _content-pages.scss */
 .sort-buttons div, .filter-buttons div {
   padding-top: 5px;
   cursor: pointer;
 }
 
-/* line 475, _content-pages.scss */
+/* line 478, _content-pages.scss */
 .featured-image {
   float: left;
   padding-right: 20px;
 }
 
-/* line 479, _content-pages.scss */
+/* line 482, _content-pages.scss */
 .cotnent {
   float: right;
 }
 
-/* line 482, _content-pages.scss */
+/* line 485, _content-pages.scss */
 .option-set {
   display: none;
   float: none !important;
   position: absolute;
-  top: 38%;
+  top: 40%;
 }
-/* line 487, _content-pages.scss */
+/* line 490, _content-pages.scss */
 .option-set.style {
   left: 9%;
 }
-/* line 490, _content-pages.scss */
+/* line 493, _content-pages.scss */
 .option-set.skill-level {
   left: 14%;
 }
-/* line 493, _content-pages.scss */
+/* line 496, _content-pages.scss */
 .option-set.weight-range {
   left: 22%;
 }
 
-/* line 497, _content-pages.scss */
+/* line 500, _content-pages.scss */
 .board-container {
   transition: all .2s;
   -webkit-transition: all .2s;
@@ -1333,33 +1337,36 @@ a:active {
 
 /* line 30, _navigation.scss */
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  background: url(/wp-content/themes/wakemojo/img/header-bg.png);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   display: none;
   float: left;
   left: 0;
+  padding: 0 0 5px 20px;
   position: absolute;
-  top: 1.5em;
+  top: 100%;
   z-index: 99999;
 }
 
-/* line 39, _navigation.scss */
+/* line 42, _navigation.scss */
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
 }
 
-/* line 43, _navigation.scss */
+/* line 46, _navigation.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
 
-/* line 54, _navigation.scss */
+/* line 57, _navigation.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
 
 /* Small menu */
-/* line 61, _navigation.scss */
+/* line 64, _navigation.scss */
 .menu-toggle {
   cursor: pointer;
   display: none;
@@ -1369,24 +1376,24 @@ a:active {
   text-decoration: none;
 }
 
-/* line 69, _navigation.scss */
+/* line 72, _navigation.scss */
 a.menu-toggle, a:visited.menu-toggle {
   color: #fff;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 74, _navigation.scss */
+  /* line 77, _navigation.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
   }
 
-  /* line 78, _navigation.scss */
+  /* line 81, _navigation.scss */
   .main-navigation ul, .search-box {
     display: none;
   }
 }
-/* line 84, _navigation.scss */
+/* line 87, _navigation.scss */
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -1394,7 +1401,7 @@ a.menu-toggle, a:visited.menu-toggle {
   overflow: hidden;
 }
 
-/* line 90, _navigation.scss */
+/* line 93, _navigation.scss */
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -1402,7 +1409,7 @@ a.menu-toggle, a:visited.menu-toggle {
   width: 50%;
 }
 
-/* line 96, _navigation.scss */
+/* line 99, _navigation.scss */
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1411,28 +1418,35 @@ a.menu-toggle, a:visited.menu-toggle {
   width: 50%;
 }
 
-/* line 102, _navigation.scss */
+/* line 105, _navigation.scss */
 #menu-menu-1 li {
   padding: 10px 15px;
 }
-/* line 104, _navigation.scss */
+/* line 107, _navigation.scss */
 #menu-menu-1 li a {
   color: #fff;
   font-size: 15px;
   font-family: Helvetica, sans-serif;
   text-transform: uppercase;
 }
-/* line 109, _navigation.scss */
+/* line 112, _navigation.scss */
 #menu-menu-1 li a:hover {
   color: #77CA93;
 }
-/* line 113, _navigation.scss */
+/* line 116, _navigation.scss */
 #menu-menu-1 li.firstnav {
   padding: 10px 15px 10px 0;
 }
-/* line 116, _navigation.scss */
+/* line 119, _navigation.scss */
 #menu-menu-1 li.lastnav {
   padding: 10px 0 10px 15px;
+}
+
+/* line 125, _navigation.scss */
+.sub-menu li {
+  position: relative;
+  float: none;
+  padding: 5px 0 !important;
 }
 
 /* line 5, _typography.scss */

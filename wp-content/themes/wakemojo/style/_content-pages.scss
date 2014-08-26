@@ -58,7 +58,7 @@ h3{
 		}
 		.sidebar-top{
 			background: url(/wp-content/themes/wakemojo/img/sidebar-bg.png);
-			padding: 0 30px;
+			padding: 0 30px 20px 30px;
 		}
 		.brand-name{
 			font-family: 'Oswald', sans-serif;
@@ -291,6 +291,9 @@ h3{
 	text-transform: uppercase;
 	font-size: 20px;
 }
+.search .inner-wrap{
+	padding: 30px !important;
+}
 .brands-loop{
 	width: 100%;
 	background: url(/wp-content/themes/wakemojo/img/gate-bg.png);
@@ -460,7 +463,7 @@ h3{
 }
 .sort-buttons, .filter-buttons{
 	overflow: hidden;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	position: relative;
 	width: 100%;
 	h2, div{
@@ -483,7 +486,7 @@ h3{
 	display: none;
 	float: none !important;
 	position: absolute;
-	top: 38%;
+	top: 40%;
 	&.style{
 		left: 9%;
 	}

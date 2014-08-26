@@ -26,6 +26,7 @@ get_header(); ?>
             <div class="brands-loop">
                 <div class="wrap">
                     <div class="inner-wrap">
+                        <div class="board-container">
                     <?php
                     //list terms in a given taxonomy
                     $taxonomy = 'brand';
@@ -44,6 +45,7 @@ get_header(); ?>
                     <?php }
                     ?>
                   </div>
+              </div>
               </div>
           </div>
       </main>
