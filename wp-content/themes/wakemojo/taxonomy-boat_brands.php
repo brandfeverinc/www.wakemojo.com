@@ -41,7 +41,7 @@ $term = $wp_query->queried_object; ?>
                         <?php } ?>
                         <?php if( get_field('brand_website', $term) ){ ?>
                         <div class="brand-link">
-                           Read more on <a target="_blank" href="<?php the_field('brand_website', $term); ?>"><?php echo $term->name . '\'s'; ?></a> website >>
+                           <a target="_blank" href="<?php the_field('brand_website', $term); ?>">Read more on <?php echo $term->name . '\'s'; ?> website >></a>
                         </div>
                         <?php } ?>
                         <div class="boards-loop-title">
@@ -60,7 +60,7 @@ $term = $wp_query->queried_object; ?>
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
                                 $query->the_post(); ?>
-                                <div class="brand-container">
+                                <div class="brand-container boat">
                                     <a href="<?php the_permalink(); ?>">
                                     <img class="brand-image board" src="<?php the_field('boat_image'); ?>">
                                     </a>

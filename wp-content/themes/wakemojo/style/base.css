@@ -678,7 +678,14 @@ h3 {
   text-align: center;
   border: 1px solid #809FCB;
 }
-/* line 356, _content-pages.scss */
+/* line 355, _content-pages.scss */
+.brands-loop .brand-container p {
+  font-family: 'Oswald', sans-serif;
+  color: #032454;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 362, _content-pages.scss */
 .brands-loop .view-all-boards {
   display: block;
   background: #032454;
@@ -692,13 +699,13 @@ h3 {
   text-decoration: none;
 }
 
-/* line 369, _content-pages.scss */
+/* line 375, _content-pages.scss */
 #bottom-container {
   background: url(/wp-content/themes/wakemojo/img/waves-bg.jpg) no-repeat center fixed;
   background-size: cover;
 }
 
-/* line 373, _content-pages.scss */
+/* line 379, _content-pages.scss */
 .board-brand-title {
   color: #032454;
   font-family: 'Oswald', sans-serif;
@@ -706,7 +713,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 379, _content-pages.scss */
+/* line 385, _content-pages.scss */
 .quote {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
@@ -716,7 +723,7 @@ h3 {
   letter-spacing: 1px;
 }
 
-/* line 387, _content-pages.scss */
+/* line 393, _content-pages.scss */
 .brand-blurb {
   padding: 30px 30px 30px 0;
   color: #8FB9FF;
@@ -725,7 +732,7 @@ h3 {
   font-weight: 500;
 }
 
-/* line 394, _content-pages.scss */
+/* line 400, _content-pages.scss */
 .brand-link {
   font-family: Helvetica, sans-serif;
   color: #77C089;
@@ -733,12 +740,12 @@ h3 {
   text-transform: uppercase;
   text-decoration: underline;
 }
-/* line 400, _content-pages.scss */
+/* line 406, _content-pages.scss */
 .brand-link a, .brand-link a:visited {
   color: #77C089;
 }
 
-/* line 404, _content-pages.scss */
+/* line 410, _content-pages.scss */
 .boards-loop-title {
   background: url(/wp-content/themes/wakemojo/img/loop-title-bg.png) no-repeat center;
   font-family: Helvetica, sans-serif;
@@ -749,12 +756,12 @@ h3 {
   padding: 20px 0;
 }
 
-/* line 413, _content-pages.scss */
+/* line 419, _content-pages.scss */
 .brand-image.board {
   max-width: 157px;
 }
 
-/* line 416, _content-pages.scss */
+/* line 422, _content-pages.scss */
 .bottom-summary {
   width: 780px;
   margin: 0 auto;
@@ -765,23 +772,23 @@ h3 {
   padding: 40px 0;
 }
 
-/* line 425, _content-pages.scss */
+/* line 431, _content-pages.scss */
 .rating-title {
   float: left;
 }
 
-/* line 428, _content-pages.scss */
+/* line 434, _content-pages.scss */
 .rating {
   float: right;
 }
 
-/* line 431, _content-pages.scss */
+/* line 437, _content-pages.scss */
 .rating-container {
   overflow: hidden;
   width: 420px;
 }
 
-/* line 435, _content-pages.scss */
+/* line 441, _content-pages.scss */
 .expand {
   padding: 50px 0;
   text-align: center;
@@ -789,20 +796,82 @@ h3 {
   width: 290px;
   margin: 0 auto;
 }
-/* line 441, _content-pages.scss */
+/* line 447, _content-pages.scss */
 .expand h3 {
   padding-bottom: 20px;
 }
 
-/* line 445, _content-pages.scss */
+/* line 451, _content-pages.scss */
 .review-content {
   display: none;
 }
 
-/* line 448, _content-pages.scss */
+/* line 454, _content-pages.scss */
 .fancybox {
   float: left;
   margin: 0 45px 30px 0;
+}
+
+/* line 458, _content-pages.scss */
+.sorting-data {
+  display: none;
+}
+
+/* line 461, _content-pages.scss */
+.sort-buttons, .filter-buttons {
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+/* line 466, _content-pages.scss */
+.sort-buttons h2, .sort-buttons div, .filter-buttons h2, .filter-buttons div {
+  float: left;
+  margin-right: 15px;
+}
+/* line 470, _content-pages.scss */
+.sort-buttons div, .filter-buttons div {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+/* line 475, _content-pages.scss */
+.featured-image {
+  float: left;
+  padding-right: 20px;
+}
+
+/* line 479, _content-pages.scss */
+.cotnent {
+  float: right;
+}
+
+/* line 482, _content-pages.scss */
+.option-set {
+  display: none;
+  float: none !important;
+  position: absolute;
+  top: 38%;
+}
+/* line 487, _content-pages.scss */
+.option-set.style {
+  left: 9%;
+}
+/* line 490, _content-pages.scss */
+.option-set.skill-level {
+  left: 14%;
+}
+/* line 493, _content-pages.scss */
+.option-set.weight-range {
+  left: 22%;
+}
+
+/* line 497, _content-pages.scss */
+.board-container {
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
 }
 
 /*--------------------------------------------------------------

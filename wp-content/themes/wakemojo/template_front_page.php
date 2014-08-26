@@ -30,7 +30,7 @@ get_header(); ?>
         		<div class="wrap">
         			<div class="featured-box boards">
         				<div class="image">
-        					<img src="<?php the_field('boards_image'); ?>">
+        					<a href="/board-makers/"><img src="<?php the_field('boards_image'); ?>"></a>
         				</div>
         				<div class="text">
         					<h2>Boards</h2>
@@ -40,7 +40,7 @@ get_header(); ?>
 				    </div>
         			<div class="featured-box boats">
         				<div class="image">
-        					<img src="<?php the_field('boats_image'); ?>">
+        					<a href="/boat-makers/"><img src="<?php the_field('boats_image'); ?>"></a>
         				</div>
         				<div class="text">
         					<h2>Boats</h2>
@@ -50,12 +50,12 @@ get_header(); ?>
 				    </div>
         			<div class="featured-box gear">
         				<div class="image">
-        					<img src="<?php the_field('gear_image'); ?>">
+        					<a href="/gear"><img src="<?php the_field('gear_image'); ?>"></a>
         				</div>
         				<div class="text">
         					<h2>Gear</h2>
         					<p><?php the_field('gear_text'); ?></p>
-        					<a href="#"><div class="view-all">View All</div></a>
+        					<a href="/gear"><div class="view-all">View All</div></a>
         				</div>
 				    </div>
 			     </div>

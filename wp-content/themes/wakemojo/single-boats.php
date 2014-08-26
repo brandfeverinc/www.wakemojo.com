@@ -61,7 +61,7 @@ $term = $wp_query->queried_object; ?>
                         </div>
                         <div class="sidebar-bottom">
                             <?php if( get_field('manufacturer_link') ){ ?>
-                                <a href="<?php the_field('manufacturer_link'); ?>">Read more on manufacturer website >></a>
+                                <a target="_blank" href="<?php the_field('manufacturer_link'); ?>">Read more on manufacturer website >></a>
                             <?php } ?>
                         </div>
                     </div>
@@ -137,11 +137,11 @@ $term = $wp_query->queried_object; ?>
 <div id="bottom-container">
     <div class="cta">
         <div class="wrap">
-            <h2><a href="#">Want us to review your product?</a></h2>
+            <h2><a href="/contact-us/">Want us to review your product?</a></h2>
         </div>
     </div>
     <div class="contact-us">
-        <a href="<?php the_field('page_cta_link'); ?>">Contact Us >></a>
+        <a href="/contact-us/">Contact Us >></a>
     </div>
 
   <?php get_footer(); ?>

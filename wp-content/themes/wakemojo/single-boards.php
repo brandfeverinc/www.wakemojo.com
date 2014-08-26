@@ -32,6 +32,21 @@ $term = $wp_query->queried_object; ?>
                                     <?php the_field('sidebar_description'); ?>
                                 </div>
                             <?php } ?>
+                            <?php if( get_field('style') ){ ?>
+                                <div class="style-display">
+                                    <span class="fins-title">Style: </span><?php the_field('style'); ?>
+                                </div>
+                            <?php } ?>
+                            <?php if( get_field('weight_range') ){ ?>
+                                <div class="weight-range-display">
+                                    <span class="fins-title">Weight Range: </span><?php the_field('weight_range'); ?>
+                                </div>
+                            <?php } ?>
+                            <?php if( get_field('price') ){ ?>
+                                <div class="price-display">
+                                    <span class="fins-title">$<?php the_field('price'); ?></span>
+                                </div>
+                            <?php } ?>
                             <?php if( get_field('fins') ){ ?>
                                 <div class="fins">
                                     <span class="fins-title">Fins: </span><?php the_field('fins'); ?>
@@ -54,7 +69,7 @@ $term = $wp_query->queried_object; ?>
                         </div>
                         <div class="sidebar-bottom">
                             <?php if( get_field('manufacturer_link') ){ ?>
-                                <a href="<?php the_field('manufacturer_link'); ?>">Read more on manufacturer website >></a>
+                                <a target="_blank" href="<?php the_field('manufacturer_link'); ?>">Read more on manufacturer website >></a>
                             <?php } ?>
                         </div>
                     </div>
@@ -130,11 +145,11 @@ $term = $wp_query->queried_object; ?>
 <div id="bottom-container">
     <div class="cta">
         <div class="wrap">
-            <h2><a href="#">Want us to review your product?</a></h2>
+            <h2><a href="/contact-us/">Want us to review your product?</a></h2>
         </div>
     </div>
     <div class="contact-us">
-        <a href="<?php the_field('page_cta_link'); ?>">Contact Us >></a>
+        <a href="/contact-us/">Contact Us >></a>
     </div>
 
   <?php get_footer(); ?>
