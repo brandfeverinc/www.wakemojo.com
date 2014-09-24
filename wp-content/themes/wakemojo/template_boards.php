@@ -65,11 +65,13 @@ get_header(); ?>
                             $query = new WP_Query( $args );
                             if( $query->have_posts() ){
                                 while( $query->have_posts() ){
-                                    $query->the_post(); ?>
+                                    $query->the_post(); 
+                                    $terms = get_the_term_list( $post->ID, 'brand' );
+                                    $terms = strip_tags( $terms ); ?>
                                     <div class="brand-container <?php the_field('skill_level'); ?> <?php the_field('weight_range'); ?> <?php the_field('style'); ?> <?php the_field('price'); ?>">
                                         <a href="<?php the_permalink(); ?>">
                                         <img class="brand-image board" src="<?php the_field('board_image'); ?>">
-                                        <p><?php the_title(); ?></p>
+                                        <p><?php echo $terms; ?> <?php the_title(); ?></p>
                                         </a>
                                         <a class="view-all-boards" href="<?php the_permalink(); ?>">More Info</a>
                                     </div>

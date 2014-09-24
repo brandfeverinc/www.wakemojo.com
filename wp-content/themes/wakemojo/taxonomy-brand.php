@@ -47,19 +47,9 @@ $term = $wp_query->queried_object; ?>
                             Browse <?php echo $term->name; ?> boards
                         </div>
                         <div class="board-container">
-                            <?php $args = array(
-                                'post_type' => 'boards',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'brand',
-                                        'terms'    => $term,
-                                    ),
-                                ),
-                            );
-                            $query = new WP_Query( $args );
-                            if( $query->have_posts() ){
-                                while( $query->have_posts() ){
-                                    $query->the_post(); ?>
+                            <?php if( have_posts() ){
+                                while( have_posts() ){
+                                    the_post(); ?>
                                     <div class="brand-container">
                                         <a href="<?php the_permalink(); ?>">
                                         <img class="brand-image board" src="<?php the_field('board_image'); ?>">

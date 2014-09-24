@@ -47,27 +47,31 @@ $term = $wp_query->queried_object; ?>
                         <div class="boards-loop-title">
                             Browse <?php echo $term->name; ?> boats
                         </div>
-                        <?php $args = array(
-                            'post_type' => 'boats',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'boat_brands',
-                                    'terms'    => $term,
-                                ),
-                            ),
-                        );
-                        $query = new WP_Query( $args );
-                        if( $query->have_posts() ){
-                            while( $query->have_posts() ){
-                                $query->the_post(); ?>
+                        <div class="boat-sort-buttons button-group">
+                            <h2>Sort by</h2>
+                          <button data-sort-by="price">Price</button>
+                          <button data-sort-by="length">Length</button>
+                          <button data-sort-by="weight">Weight</button>
+                        </div>
+                        <div class="board-container">
+                        <?php if( have_posts() ){
+                            while( have_posts() ){
+                                the_post(); ?>
                                 <div class="brand-container boat">
+                                    <div class="sort-data">
+                                        <div class="price"><?php the_field('price'); ?></div>
+                                        <div class="length"><?php the_field('length'); ?></div>
+                                        <div class="weight"><?php the_field('dry_weight'); ?></div>
+                                    </div>
                                     <a href="<?php the_permalink(); ?>">
                                     <img class="brand-image board" src="<?php the_field('boat_image'); ?>">
+                                    <p><?php the_title(); ?></p>
                                     </a>
                                     <a class="view-all-boards" href="<?php the_permalink(); ?>">More Info</a>
                                 </div>
                             <?php }
                         } ?>
+                    </div>
                   </div>
               </div>
           </div>
@@ -77,11 +81,11 @@ $term = $wp_query->queried_object; ?>
 <div id="bottom-container">
     <div class="cta">
         <div class="wrap">
-            <h2><a href="#">Is there a boat you'd like to see on our site?</a></h2>
+            <h2><a href="/contact-us/">Is there a boat you'd like to see on our site?</a></h2>
         </div>
     </div>
     <div class="contact-us">
-        <a href="<?php the_field('page_cta_link'); ?>">Contact Us >></a>
+        <a href="/contact-us/">Contact Us >></a>
     </div>
 
   <?php get_footer(); ?>

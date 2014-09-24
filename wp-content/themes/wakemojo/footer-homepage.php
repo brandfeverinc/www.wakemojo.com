@@ -14,7 +14,7 @@
 		<div class="wrap">
 			<div class="col-1">
 				<h2>About Wakemojo</h2>
-				Info about wake mojo. How it began, goals, love of wake surfing, Lorem ipsum dolor sit amet, aliquam voluptaria te vix, et has quot noster qualisque
+				Wake Mojo was born out of a passion, a passion to understand and share the wealth of product options wakesurfers have
 			</div>
 			<div class="col-2">
 				<h2>Social Feed</h2>

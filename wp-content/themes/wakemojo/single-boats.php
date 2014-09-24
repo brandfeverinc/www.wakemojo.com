@@ -9,7 +9,7 @@ $term = $wp_query->queried_object; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        	<div class="logo"><a href="http://wakemojocom.wpengine.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
+        	<div class="logo"><a href="http://wakemojo.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
         	<div class="hero single">
             <div class="wrap">
                     <div class="board-image">
@@ -36,12 +36,12 @@ $term = $wp_query->queried_object; ?>
                            <?php } ?>
                            <?php if( get_field('length') ){ ?>
                                 <div class="shaped-by">
-                                    <span class="shaped-by-title">Length: </span><?php the_field('length'); ?>
+                                    <span class="shaped-by-title">Length: </span><?php the_field('length'); ?>'
                                 </div>
                            <?php } ?>
                            <?php if( get_field('dry_weight') ){ ?>
                                 <div class="shaped-by">
-                                    <span class="shaped-by-title">Dry Weight: </span><?php the_field('dry_weight'); ?>
+                                    <span class="shaped-by-title">Dry Weight: </span><?php the_field('dry_weight'); ?>lbs
                                 </div>
                            <?php } ?>
                            <?php if( get_field('capacity') ){ ?>
@@ -137,11 +137,11 @@ $term = $wp_query->queried_object; ?>
 <div id="bottom-container">
     <div class="cta">
         <div class="wrap">
-            <h2><a href="/contact-us/">Want us to review your product?</a></h2>
+            <h2><a href="/submit-boat-review/">Submit a Boat Review</a></h2>
         </div>
     </div>
     <div class="contact-us">
-        <a href="/contact-us/">Contact Us >></a>
+        <a href="/submit-boat-review/">Contact Us >></a>
     </div>
 
   <?php get_footer(); ?>

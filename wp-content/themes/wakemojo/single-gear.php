@@ -9,7 +9,7 @@ $term = $wp_query->queried_object; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        	<div class="logo"><a href="http://wakemojocom.wpengine.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
+        	<div class="logo"><a href="http://wakemojo.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
         	<div class="hero single">
             <div class="wrap">
                     <div class="board-image">
@@ -107,11 +107,11 @@ $term = $wp_query->queried_object; ?>
 <div id="bottom-container">
     <div class="cta">
         <div class="wrap">
-            <h2><a href="/contact-us/">Want us to review your product?</a></h2>
+            <h2><a href="/submit-gear-review/">Submit a Gear Review</a></h2>
         </div>
     </div>
     <div class="contact-us">
-        <a href="/contact-us/">Contact Us >></a>
+        <a href="/submit-gear-review/">Contact Us >></a>
     </div>
 
   <?php get_footer(); ?>

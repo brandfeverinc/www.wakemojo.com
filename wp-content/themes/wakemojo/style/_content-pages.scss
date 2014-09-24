@@ -28,6 +28,7 @@ h3{
 	text-align: center;
 	position: relative;
 	z-index: 9;
+	overflow: hidden;
 	img{
 		width: 100%;
 	}
@@ -421,6 +422,7 @@ h3{
 }
 .brand-image.board{
 	max-width: 157px;
+	max-height: 200px;
 }
 .bottom-summary{
 	width: 780px;
@@ -466,6 +468,11 @@ h3{
 	padding-bottom: 30px;
 	position: relative;
 	width: 100%;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	-ms-transition: all .2s;
 	h2, div{
 		float: left;
 		margin-right: 15px;
@@ -474,6 +481,12 @@ h3{
 		padding-top: 5px;
 		cursor: pointer;
 	}
+	&.loaded{
+		opacity: 1;
+	}
+}
+.sort-buttons{
+	opacity: 0;
 }
 .featured-image{
 	float: left;
@@ -503,7 +516,18 @@ h3{
 	-moz-transition: all .2s;
 	-ms-transition: all .2s;
 }
-
+.sort-data{
+	display: none;
+}
+.boat-sort-buttons{
+	padding-bottom: 40px;
+}
+.gform_wrapper ul.gfield_checkbox li input[type=checkbox], .inner-wrap .gform_wrapper ul.gfield_radio li input[type=radio]{
+	width: 18px !important;
+}
+.board-container.brands .brand-container img{
+	max-height: 180px;
+}
 
 
 

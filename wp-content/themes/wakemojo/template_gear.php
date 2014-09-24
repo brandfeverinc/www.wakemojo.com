@@ -3,12 +3,11 @@
  * Template Name: Gear
  * @package WakeMojo
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        	<div class="logo"><a href="http://wakemojocom.wpengine.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
+        	<div class="logo"><a href="http://wakemojo.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
         	<div class="hero">
                 <?php if(get_field('page_hero_image')){ ?>
         		  <img src="<?php the_field('page_hero_image'); ?>">
@@ -28,30 +27,25 @@ get_header(); ?>
                         <div class="board-brand-title">
                            Gear
                         </div>
-                        <div class="filter-buttons">
-                            <h2>Filter By - </h2>
-                            <div class="all" data-filter="*">All</div>
-                            <div class="vests-button" data-filter=".vests">Vests</div>
-                            <div class="board-bags-button" data-filter=".board-bags">Board Bags</div>
-                            <div class="fins-button" data-filter=".fins">Fins</div>
-                            <div class="boat-accessories-button" data-filter=".boat-accessories">Boat Accessories</div>
-                        </div>
                         <div class="board-container gear">
-                            <?php $args = array(
-                                'post_type' => 'gear',
-                            );
-                            $query = new WP_Query( $args );
-                            if( $query->have_posts() ){
-                                while( $query->have_posts() ){
-                                    $query->the_post(); ?>
-                                    <div class="brand-container gear <?php the_field('category'); ?>">
-                                        <a href="<?php the_permalink(); ?>">
-                                        <img class="brand-image board" src="<?php the_field('image'); ?>">
-                                        </a>
-                                        <a class="view-all-boards" href="<?php the_permalink(); ?>">More Info</a>
-                                    </div>
-                                <?php }
-                            } ?>
+                            <?php
+                           //list terms in a given taxonomy
+                           $taxonomy = 'gear_categories';
+                           $tax_terms = get_terms($taxonomy);
+                           $brand_image = 'category_image';
+                           ?>
+                           <?php
+                           foreach ($tax_terms as $tax_term) { 
+                           $term_link = get_term_link( $tax_term ); ?>
+                              <div class="brand-container">
+                                   <?php echo '<a href="' . esc_url( $term_link ) . '">' ?>
+                                   <img class="brand-image board" src="<?php the_field($brand_image, $tax_term); ?>">
+                                   <p><?php echo get_term( $tax_term, $taxonomy )->name ?></p>
+                                   <?php echo '</a>'; ?>
+                                   <?php echo '<a class="view-all-boards" href="' . esc_url( $term_link ) . '">View All</a>' ?>
+                               </div> 
+                           <?php }
+                           ?>
                         </div>
                   </div>
               </div>

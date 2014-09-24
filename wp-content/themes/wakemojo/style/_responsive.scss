@@ -12,6 +12,12 @@
 				-moz-transform: rotate(90deg);
 				-ms-transform: rotate(90deg);
 				max-width: 33%;
+				&.noflip{
+					transform: none;
+					-webkit-transform: none;
+					-moz-transform: none;
+					-ms-transform: none;
+				}
 			}
 		}
 	}
@@ -120,6 +126,7 @@
 	}
 	.featured-posts .featured-post{
 		width: 43%;
+		min-height: 400px;
 	}
 	.header-wrap{
 		width: 85%;
@@ -163,5 +170,10 @@
 	}
 	.brands-loop .inner-wrap{
 		padding: 30px 0 0 10px;
+	}
+	.brands-loop .inner-wrap.blog .content{
+		float: none;
+		margin: 0 auto;
+		width: 97%;
 	}
 }

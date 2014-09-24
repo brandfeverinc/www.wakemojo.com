@@ -125,7 +125,7 @@ function WakeMojo_scripts() {
 	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/js/fancybox/source/jquery.fancybox.pack.js', array('jquery'));
 	wp_enqueue_style( 'fancybox-style', get_template_directory_uri() . '/js/fancybox/source/jquery.fancybox.css' );
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'));
-
+	wp_enqueue_script( 'fitColumns', get_template_directory_uri() . '/js/fit-columns.js', array('jquery', 'isotope') );
 	wp_enqueue_script( 'WakeMojo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -184,7 +184,29 @@ function change_notification_format( $notification, $form, $entry ) {
 // 	return $notification;
 // }
 
+add_action( 'admin_footer-edit-tags.php', 'wpse_56569_remove_cat_tag_description' );
 
+function wpse_56569_remove_cat_tag_description(){
+    global $current_screen;
+    switch ( $current_screen->id ) 
+    {
+        case 'edit-category':
+            // WE ARE AT /wp-admin/edit-tags.php?taxonomy=category
+            // OR AT /wp-admin/edit-tags.php?action=edit&taxonomy=category&tag_ID=1&post_type=post
+            break;
+        case 'edit-post_tag':
+            // WE ARE AT /wp-admin/edit-tags.php?taxonomy=post_tag
+            // OR AT /wp-admin/edit-tags.php?action=edit&taxonomy=post_tag&tag_ID=3&post_type=post
+            break;
+    }
+    ?>
+    <script type="text/javascript">
+    jQuery(document).ready( function($) {
+        $('#tag-description').parent().remove();
+    });
+    </script>
+    <?php
+}
 
 
 

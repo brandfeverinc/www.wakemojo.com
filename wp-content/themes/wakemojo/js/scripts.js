@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
 
-	$('img.brand-image').load(function(){
+	$('img.brand-image').load(function(){ // Vertically center the brands, boards, and boats in their containers
 		$('img.brand-image').each(function(){
 			var height = $(this).height();
-			console.log("height: " + height);
+			//console.log("height: " + height);
 			var container_height = height + 120;
-			console.log("container height: " + container_height);
+			//console.log("container height: " + container_height);
 			$(this).parents('.brand-container').css('height', container_height);
 			var padding_height = ((262 - height) / 2) - 20;
 			var padding_height_boat = ((container_height - height) / 2) - 20;
@@ -21,6 +21,13 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	$('.board-image img').load(function(){ // Prevent smaller board/boat images from flipping in responsive view
+		var height = $(this).height();
+		if( height < 500 ){
+			$(this).addClass('noflip');
+		}
+	})
+
 	$('.expand').on('click touch', function(){
 		$('.review-content').slideToggle();
 	})
@@ -33,18 +40,18 @@ jQuery(document).ready(function($) {
 
 	$(window).load(function(){
 		$('.board-container').isotope({
-			layoutMode: 'masonry',
+			layoutMode: 'fitRows',
 			itemSelector: '.brand-container',
 			getSortData: {
-				weight: '.weight-range',
-				skill: '.skill-level',
-				style: '.style'
+				price: '.price',
+				length: '.length',
+				weight: '.weight',
 			}
 		});
-		// $('.sort-buttons').on('click', 'div', function(){
-		// 	var sortByValue = $(this).attr('data-sort-by');
-		// 	$('.board-container').isotope({ sortBy: sortByValue });
-		// });
+		$('.boat-sort-buttons').on('click', 'button', function(){
+			var sortByValue = $(this).attr('data-sort-by');
+			$('.board-container').isotope({ sortBy: sortByValue });
+		});
 		$('.filter-buttons').on('click', 'div', function(){
 			var filterValue = $(this).attr('data-filter');
 			$('.board-container').isotope({filter: filterValue });
@@ -59,7 +66,7 @@ jQuery(document).ready(function($) {
 
 		  var $filterDisplay = $('#filter-display');
 
-		  $container.isotope();
+		  $container.isotope({layoutMode: 'masonry'});
 		  // do stuff when checkbox change
 		  $('.sort-buttons').on( 'change', function( jQEvent ) {
 		    var $checkbox = $( jQEvent.target );
@@ -135,7 +142,7 @@ jQuery(document).ready(function($) {
 		  }
 
 		}
-
+		$('.sort-buttons').addClass('loaded');
 
 	});
 

@@ -5,7 +5,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        	<div class="logo"><a href="http://wakemojocom.wpengine.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
+        	<div class="logo"><a href="http://wakemojo.com"><img src="/wp-content/themes/wakemojo/img/logo.png"></a></div>
         	<div class="hero">
                 <?php if(get_field('page_hero_image')){ ?>
         		  <img src="<?php the_field('page_hero_image'); ?>">
