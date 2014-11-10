@@ -447,6 +447,7 @@ h3{
 	width: 420px;
 }
 .expand {
+	display: none;
 	padding: 50px 0;
 	text-align: center;
 	cursor: pointer;
@@ -457,7 +458,7 @@ h3{
 	}
 }
 .review-content{
-	display: none;
+	display: block;
 }
 .fancybox{
 	float: left;

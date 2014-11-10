@@ -28,9 +28,9 @@ jQuery(document).ready(function($) {
 		}
 	})
 
-	$('.expand').on('click touch', function(){
-		$('.review-content').slideToggle();
-	})
+	// $('.expand').on('click touch', function(){
+	// 	$('.review-content').slideToggle();
+	// })
 
 	$('.menu-toggle').on('click touch', function(){
 		$('.main-navigation ul, .search-box').slideToggle();
