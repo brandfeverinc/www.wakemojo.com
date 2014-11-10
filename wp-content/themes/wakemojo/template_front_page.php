@@ -77,11 +77,11 @@ get_header(); ?>
                         <img class="border" src="/wp-content/themes/wakemojo/img/featured-top-border.png">
                         <div class="image">
                                 <?php if ( has_post_thumbnail() ) { 
-                                  ?> <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(232, 142, true)); ?></a><?php
+                                  ?> <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage'); ?></a><?php
                                 } ?>
                         </div>
                         <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                        <div class="content"><?php wp_trim_words( the_content(), 30 ) ?></div>
+                        <div class="content"><?php echo wp_trim_words( get_the_content(), 30 ) ?></div>
                         <div class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></div>
                     </div>
                     <?php $count++; } endwhile; endif; ?>

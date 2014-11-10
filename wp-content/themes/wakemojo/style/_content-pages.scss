@@ -362,6 +362,9 @@ h3{
 			text-transform: uppercase;
 			text-decoration: none;
 		}
+		&.single{
+			min-height: 280px;
+		}
 	}
 	.view-all-boards{
 		display: block;
@@ -528,7 +531,10 @@ h3{
 .board-container.brands .brand-container img{
 	max-height: 180px;
 }
-
+.brand-image.gear{
+	max-width: 157px;
+	max-height: 168px;
+}
 
 
 

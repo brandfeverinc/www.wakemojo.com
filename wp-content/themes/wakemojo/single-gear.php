@@ -19,6 +19,11 @@ $term = $wp_query->queried_object; ?>
                         <div class="sidebar-top">
                             <h2 class="brand-name"><?php echo get_the_term_list( $post->ID, 'gear_brands' ); ?></h2>
                             <h3 class="board-title"><?php the_title(); ?></h3>
+                            <?php if( get_field('sidebar_description') ){ ?>
+                                <div class="summary">
+                                    <?php the_field('sidebar_description'); ?>
+                                </div>
+                            <?php } ?>
                            <?php if( have_rows('features') ){ ?>
                                 <div class="construction-features">
                                     <div class="cf-title">Construction Features</div>
@@ -89,13 +94,13 @@ $term = $wp_query->queried_object; ?>
                                 } ?>
                             </div>
                         </div>
-                        <?php if( get_field('full_review') ){ ?>
+                        <?php if( get_field('review') ){ ?>
                         <div class="expand">
                             <h3>Expand for full review</h3>
                             <img src="/wp-content/themes/wakemojo/img/green-arrow.png">
                         </div>
                         <div class="review-content">
-                            <?php the_field('full_review'); ?>
+                            <?php the_field('review'); ?>
                         </div>
                         <?php } ?>
                     </div>

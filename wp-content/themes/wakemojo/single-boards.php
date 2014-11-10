@@ -37,14 +37,29 @@ $term = $wp_query->queried_object; ?>
                                     <span class="fins-title">Style: </span><?php the_field('style'); ?>
                                 </div>
                             <?php } ?>
-                            <?php if( get_field('weight_range') ){ ?>
+                            <?php if( get_field('weight_range') ){ 
+                                $weight_range = get_field('weight_range'); ?>
                                 <div class="weight-range-display">
-                                    <span class="fins-title">Weight Range: </span><?php the_field('weight_range'); ?>
+                                    <?php if( $weight_range == 'w-100' ){ ?>
+                                        <span class="fins-title">Weight Range: </span>Up to 100 lbs
+                                   <?php }
+                                   elseif( $weight_range == 'w-150' ){ ?>
+                                    <span class="fins-title">Weight Range: </span>Up to 150 lbs
+                                   <?php }
+                                   elseif( $weight_range == 'w-200' ){ ?>
+                                    <span class="fins-title">Weight Range: </span>Up to 200 lbs
+                                   <?php }
+                                   elseif( $weight_range == 'w-250' ){ ?>
+                                    <span class="fins-title">Weight Range: </span>Up to 250 lbs
+                                   <?php }
+                                   elseif( $weight_range == 'w-max' ){ ?>
+                                    <span class="fins-title">Weight Range: </span>250+ lbs
+                                   <?php } ?>
                                 </div>
                             <?php } ?>
                             <?php if( get_field('price') ){ ?>
                                 <div class="price-display">
-                                    <span class="fins-title">$<?php the_field('price'); ?></span>
+                                    <span class="fins-title">Price: $<?php echo number_format( get_field('price') ); ?></span>
                                 </div>
                             <?php } ?>
                             <?php if( get_field('fins') ){ ?>
@@ -54,7 +69,7 @@ $term = $wp_query->queried_object; ?>
                            <?php } ?>
                            <?php if( get_field('shaped_by') ){ ?>
                                 <div class="shaped-by">
-                                    <span class="shaped-by-title">Shaped By: </span><?php the_field('shaped_by'); ?>
+                                    <span class="fins-title">Board Construction: </span><?php the_field('shaped_by'); ?>
                                 </div>
                            <?php } ?>
                            <?php if( have_rows('construction_features') ){ ?>

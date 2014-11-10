@@ -51,6 +51,7 @@ jQuery(document).ready(function($) {
 		$('.boat-sort-buttons').on('click', 'button', function(){
 			var sortByValue = $(this).attr('data-sort-by');
 			$('.board-container').isotope({ sortBy: sortByValue });
+			console.log(sortByValue);
 		});
 		$('.filter-buttons').on('click', 'div', function(){
 			var filterValue = $(this).attr('data-filter');
@@ -66,7 +67,7 @@ jQuery(document).ready(function($) {
 
 		  var $filterDisplay = $('#filter-display');
 
-		  $container.isotope({layoutMode: 'masonry'});
+		  $container.isotope({layoutMode: 'fitRows'});
 		  // do stuff when checkbox change
 		  $('.sort-buttons').on( 'change', function( jQEvent ) {
 		    var $checkbox = $( jQEvent.target );

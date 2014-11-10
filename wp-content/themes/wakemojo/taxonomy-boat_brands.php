@@ -47,12 +47,12 @@ $term = $wp_query->queried_object; ?>
                         <div class="boards-loop-title">
                             Browse <?php echo $term->name; ?> boats
                         </div>
-                        <div class="boat-sort-buttons button-group">
+                        <!-- <div class="boat-sort-buttons button-group">
                             <h2>Sort by</h2>
                           <button data-sort-by="price">Price</button>
                           <button data-sort-by="length">Length</button>
                           <button data-sort-by="weight">Weight</button>
-                        </div>
+                        </div> -->
                         <div class="board-container">
                         <?php if( have_posts() ){
                             while( have_posts() ){

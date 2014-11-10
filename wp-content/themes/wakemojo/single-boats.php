@@ -58,6 +58,11 @@ $term = $wp_query->queried_object; ?>
                                     }
                                 ?></div><?php
                            } ?>
+                           <?php if( get_field('price') ){ ?>
+                               <div class="price-display">
+                                   <span class="fins-title">Price: $<?php echo number_format( get_field('price') ); ?></span>
+                               </div>
+                           <?php } ?>
                         </div>
                         <div class="sidebar-bottom">
                             <?php if( get_field('manufacturer_link') ){ ?>

@@ -47,14 +47,16 @@ get_header(); ?>
                             </div>
                             <div class="sort-by">Weight Range</div>
                             <div class="option-set weight-range" data-group="weight-range">
-                                <input type="checkbox" value=".50-150" id="w-50-150" />
-                                <label for="w-50-150">50-150</label>
-                                <input type="checkbox" value=".150-200" id="w-150-200" />
-                                <label for="w-150-200">150-200</label>
-                                <input type="checkbox" value=".200-300" id="w-200-300" />
-                                <label for="w-200-300">200-300</label>
-                                <input type="checkbox" value=".300" id="w-300" />
-                                <label for="w-300">300+</label>
+                                <input type="checkbox" value=".w-100" id="w-100" />
+                                <label for="w-100">Up to 100 lbs</label>
+                                <input type="checkbox" value=".w-150" id="w-150" />
+                                <label for="w-150">Up to 150 lbs</label>
+                                <input type="checkbox" value=".w-200" id="w-200" />
+                                <label for="w-200">Up to 200 lbs</label>
+                                <input type="checkbox" value=".w-250" id="w-250" />
+                                <label for="w-250">Up to 250 lbs</label>
+                                <input type="checkbox" value=".w-max" id="w-max" />
+                                <label for="w-max">250+ lbs</label>
                             </div>
                         </div>
                         <div class="board-container">

@@ -39,7 +39,7 @@ get_header(); ?>
                            $term_link = get_term_link( $tax_term ); ?>
                               <div class="brand-container">
                                    <?php echo '<a href="' . esc_url( $term_link ) . '">' ?>
-                                   <img class="brand-image board" src="<?php the_field($brand_image, $tax_term); ?>">
+                                   <img class="brand-image gear" src="<?php the_field($brand_image, $tax_term); ?>">
                                    <p><?php echo get_term( $tax_term, $taxonomy )->name ?></p>
                                    <?php echo '</a>'; ?>
                                    <?php echo '<a class="view-all-boards" href="' . esc_url( $term_link ) . '">View All</a>' ?>

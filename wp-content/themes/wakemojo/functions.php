@@ -208,6 +208,7 @@ function wpse_56569_remove_cat_tag_description(){
     <?php
 }
 
+add_image_size( 'homepage', 230, 150, true );
 
 
 

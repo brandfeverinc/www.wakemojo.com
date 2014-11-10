@@ -28,6 +28,7 @@ $term = $wp_query->queried_object; ?>
                     <div class="inner-wrap">
                         <?php $args = array(
                             'post_type' => 'gear',
+                            'posts_per_page' => -1,
                             'tax_query' => array(
                                 array(
                                     'taxonomy' => 'gear_categories',
@@ -38,11 +39,13 @@ $term = $wp_query->queried_object; ?>
                         $query = new WP_Query( $args );
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
-                                $query->the_post(); ?>
-                                <div class="brand-container gear">
+                                $query->the_post();
+                                $brand = get_the_term_list( $post->ID, 'gear_brands' );
+                                $brand = strip_tags( $brand ); ?>
+                                <div class="brand-container gear single">
                                     <a href="<?php the_permalink(); ?>">
                                     <img class="brand-image board" src="<?php the_field('image'); ?>">
-                                    <p><?php the_title(); ?></p>
+                                    <p><?php echo $brand; ?> <?php the_title(); ?></p>
                                     </a>
                                     <a class="view-all-boards" href="<?php the_permalink(); ?>">More Info</a>
                                 </div>
